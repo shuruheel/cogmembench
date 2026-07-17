@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="355" viewBox="0 0 760 355">
+<rect width="100%" height="100%" fill="white"/>
+<text x="20" y="30" font-family="sans-serif" font-size="18">CogMemBench task success</text>
+<text x="20" y="77" font-family="sans-serif" font-size="13">flat</text>
+<rect x="190" y="55" width="48.5" height="28" fill="#5267a8"/>
+<text x="248.5" y="75" font-family="sans-serif" font-size="12">0.097</text>
+<text x="20" y="132" font-family="sans-serif" font-size="13">mindgraph-active-prefetch</text>
+<rect x="190" y="110" width="40.2" height="28" fill="#5267a8"/>
+<text x="240.2" y="130" font-family="sans-serif" font-size="12">0.080</text>
+<text x="20" y="187" font-family="sans-serif" font-size="13">mindgraph-passive</text>
+<rect x="190" y="165" width="48.5" height="28" fill="#5267a8"/>
+<text x="248.5" y="185" font-family="sans-serif" font-size="12">0.097</text>
+<text x="20" y="242" font-family="sans-serif" font-size="13">stateless</text>
+<rect x="190" y="220" width="3.1" height="28" fill="#5267a8"/>
+<text x="203.1" y="240" font-family="sans-serif" font-size="12">0.006</text>
+<text x="20" y="297" font-family="sans-serif" font-size="13">transcript</text>
+<rect x="190" y="275" width="51.7" height="28" fill="#5267a8"/>
+<text x="251.7" y="295" font-family="sans-serif" font-size="12">0.103</text>
+</svg>

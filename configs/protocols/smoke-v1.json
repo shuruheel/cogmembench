@@ -1,0 +1,13 @@
+{
+  "protocol_id": "smoke-v1",
+  "frozen_at_commit": "969eaa6",
+  "files": {
+    "scenarios/fixtures/smoke-42.jsonl": "544170f96bfb84902b8786a61c993f3976e21e6c1e42caf644ce2f40e912952c",
+    "cogmembench/evaluators/deterministic.py": "fbc7706d466e472625c23c75f32c82e155068e0be097020e57155d001834fa98",
+    "cogmembench/agents/base.py": "a83271f9dfde57ec9707ad85c594b74f6a2f635b11a7410fe4bd4bd252437ff8",
+    "configs/conditions.yaml": "2c1136e98ba170a333dfb11fe2f862079f8d2ab18bd5534bf48ee10fc7a0e459",
+    "configs/models.yaml": "bcf70aeb8e4faab33816dcad2a2cd872029004009b9e9abcd8aba9e776137d6c",
+    "configs/scales.yaml": "cf8914b01a6bac801a6d16a2f6f074d691dfd41afd7a038c866633129369fdf5",
+    "configs/metrics.yaml": "452a393cc5f7bcff76acff2defc47893e46b373a7e10fd51d4345b11ada9f3a9"
+  }
+}

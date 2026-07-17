@@ -1,0 +1,1652 @@
+{
+  "composite_weights": {
+    "belief_update_accuracy": 0.15,
+    "continuity_accuracy": 0.2,
+    "contradiction_handling": 0.1,
+    "inverse_memory_contamination": 0.05,
+    "long_horizon_recovery": 0.1,
+    "memory_precision": 0.05,
+    "memory_recall": 0.05,
+    "task_success": 0.3
+  },
+  "conditions": {
+    "flat": {
+      "composite": {
+        "ci95_high": 0.8887500000000002,
+        "ci95_low": 0.43562500000000004,
+        "mean": 0.6735416666666667,
+        "median": 0.69625,
+        "n": 4,
+        "stddev": 0.27142147677653583
+      },
+      "efficiency": {
+        "estimated_inference_cost_usd": {
+          "ci95_high": 0.0006817,
+          "ci95_low": 0.00040765,
+          "mean": 0.00054915,
+          "median": 0.0005581,
+          "n": 4,
+          "stddev": 0.00015760967609889943
+        },
+        "historical_context_tokens": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "input_tokens": {
+          "ci95_high": 848.25,
+          "ci95_low": 599.0,
+          "mean": 722.75,
+          "median": 699.0,
+          "n": 4,
+          "stddev": 157.29457502829948
+        },
+        "latency_ms": {
+          "ci95_high": 40167.34824949526,
+          "ci95_low": 21953.100885541062,
+          "mean": 28209.679822510225,
+          "median": 22508.59033249435,
+          "n": 4,
+          "stddev": 11918.432877707017
+        },
+        "memory_storage_growth": {
+          "ci95_high": 5.0,
+          "ci95_low": 4.0,
+          "mean": 4.5,
+          "median": 4.5,
+          "n": 4,
+          "stddev": 0.5773502691896257
+        },
+        "memory_tool_calls": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "model_calls": {
+          "ci95_high": 5.0,
+          "ci95_low": 4.0,
+          "mean": 4.5,
+          "median": 4.5,
+          "n": 4,
+          "stddev": 0.5773502691896257
+        },
+        "output_tokens": {
+          "ci95_high": 2182.0,
+          "ci95_low": 1288.75,
+          "mean": 1754.75,
+          "median": 1793.5,
+          "n": 4,
+          "stddev": 525.6217746631127
+        },
+        "reasoning_tokens": {
+          "ci95_high": 2322.5,
+          "ci95_low": 1283.25,
+          "mean": 1799.25,
+          "median": 1792.0,
+          "n": 4,
+          "stddev": 631.6129484634293
+        },
+        "retrieved_context_tokens": {
+          "ci95_high": 231.0,
+          "ci95_low": 167.0,
+          "mean": 197.25,
+          "median": 191.5,
+          "n": 4,
+          "stddev": 39.936407783708674
+        },
+        "wall_seconds": {
+          "ci95_high": 40.18024206161499,
+          "ci95_low": 21.95761203765869,
+          "mean": 28.218679070472717,
+          "median": 22.51818311214447,
+          "n": 4,
+          "stddev": 11.9222279767446
+        }
+      },
+      "metrics": {
+        "appropriate_retrieval_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "appropriate_write_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "belief_update_accuracy": {
+          "ci95_high": 0.9,
+          "ci95_low": 0.4375,
+          "mean": 0.6708333333333333,
+          "median": 0.675,
+          "n": 4,
+          "stddev": 0.27901115071305344
+        },
+        "continuity_accuracy": {
+          "ci95_high": 0.9,
+          "ci95_low": 0.1875,
+          "mean": 0.5875,
+          "median": 0.675,
+          "n": 4,
+          "stddev": 0.425
+        },
+        "contradiction_handling": {
+          "ci95_high": 0.9,
+          "ci95_low": 0.4375,
+          "mean": 0.6708333333333333,
+          "median": 0.675,
+          "n": 4,
+          "stddev": 0.27901115071305344
+        },
+        "correct_primitive_selection": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "harmful_write_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "long_horizon_recovery": {
+          "ci95_high": 0.9,
+          "ci95_low": 0.4375,
+          "mean": 0.6708333333333333,
+          "median": 0.675,
+          "n": 4,
+          "stddev": 0.27901115071305344
+        },
+        "memory_contamination": {
+          "ci95_high": 0.2,
+          "ci95_low": 0.0,
+          "mean": 0.1,
+          "median": 0.1,
+          "n": 4,
+          "stddev": 0.11547005383792516
+        },
+        "memory_precision": {
+          "ci95_high": 0.575,
+          "ci95_low": 0.42500000000000004,
+          "mean": 0.5,
+          "median": 0.5,
+          "n": 4,
+          "stddev": 0.08164965809277258
+        },
+        "memory_recall": {
+          "ci95_high": 1.0,
+          "ci95_low": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "missed_retrieval_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "missed_write_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "provenance_completeness": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 2,
+          "stddev": 0.0
+        },
+        "retrieval_precision": {
+          "ci95_high": 0.85625,
+          "ci95_low": 0.7625,
+          "mean": 0.80625,
+          "median": 0.8,
+          "n": 4,
+          "stddev": 0.05153882032022075
+        },
+        "retrieval_recall": {
+          "ci95_high": 1.0,
+          "ci95_low": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "stale_belief_rate": {
+          "ci95_high": 0.75,
+          "ci95_low": 0.0,
+          "mean": 0.25,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.5
+        },
+        "structural_quality": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "supersession_correctness": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "task_success": {
+          "ci95_high": 0.9,
+          "ci95_low": 0.4375,
+          "mean": 0.6708333333333333,
+          "median": 0.675,
+          "n": 4,
+          "stddev": 0.27901115071305344
+        },
+        "unnecessary_retrieval_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        }
+      },
+      "n": 4
+    },
+    "mindgraph-active": {
+      "composite": {
+        "ci95_high": 0.528945623342175,
+        "ci95_low": 0.46157051282051287,
+        "mean": 0.5002540616710875,
+        "median": 0.5147035256410257,
+        "n": 4,
+        "stddev": 0.04202933455434117
+      },
+      "efficiency": {
+        "estimated_inference_cost_usd": {
+          "ci95_high": 0.0009205999999999999,
+          "ci95_low": 0.00066212,
+          "mean": 0.00081096,
+          "median": 0.0008432,
+          "n": 4,
+          "stddev": 0.00014231932546214515
+        },
+        "historical_context_tokens": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "input_tokens": {
+          "ci95_high": 9726.0,
+          "ci95_low": 7359.5,
+          "mean": 8542.75,
+          "median": 8748.0,
+          "n": 4,
+          "stddev": 1451.7934598282222
+        },
+        "latency_ms": {
+          "ci95_high": 12393.61745788483,
+          "ci95_low": 8677.279291994637,
+          "mean": 10535.448374939733,
+          "median": 10949.678312492324,
+          "n": 4,
+          "stddev": 2314.3734839694744
+        },
+        "memory_storage_growth": {
+          "ci95_high": 183.5,
+          "ci95_low": 130.75,
+          "mean": 153.25,
+          "median": 145.5,
+          "n": 4,
+          "stddev": 30.793668180325643
+        },
+        "memory_tool_calls": {
+          "ci95_high": 5.5,
+          "ci95_low": 2.75,
+          "mean": 4.25,
+          "median": 4.5,
+          "n": 4,
+          "stddev": 1.707825127659933
+        },
+        "model_calls": {
+          "ci95_high": 9.0,
+          "ci95_low": 7.5,
+          "mean": 8.25,
+          "median": 8.5,
+          "n": 4,
+          "stddev": 0.9574271077563381
+        },
+        "output_tokens": {
+          "ci95_high": 514.5,
+          "ci95_low": 343.0,
+          "mean": 455.5,
+          "median": 509.0,
+          "n": 4,
+          "stddev": 112.40848129330219
+        },
+        "reasoning_tokens": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "retrieved_context_tokens": {
+          "ci95_high": 552.5,
+          "ci95_low": 489.5,
+          "mean": 515.75,
+          "median": 503.5,
+          "n": 4,
+          "stddev": 37.20551034457127
+        },
+        "wall_seconds": {
+          "ci95_high": 67.54605287313461,
+          "ci95_low": 57.591092586517334,
+          "mean": 62.08556133508682,
+          "median": 61.11953854560852,
+          "n": 4,
+          "stddev": 5.68640237121102
+        }
+      },
+      "metrics": {
+        "appropriate_retrieval_rate": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "appropriate_write_rate": {
+          "ci95_high": 1.0,
+          "ci95_low": 0.6166666666666667,
+          "mean": 0.8166666666666667,
+          "median": 0.8333333333333333,
+          "n": 4,
+          "stddev": 0.21343747458109497
+        },
+        "belief_update_accuracy": {
+          "ci95_high": 0.6,
+          "ci95_low": 0.4,
+          "mean": 0.4916666666666667,
+          "median": 0.45,
+          "n": 4,
+          "stddev": 0.12583057392117913
+        },
+        "continuity_accuracy": {
+          "ci95_high": 0.475,
+          "ci95_low": 0.1,
+          "mean": 0.325,
+          "median": 0.4,
+          "n": 4,
+          "stddev": 0.2217355782608345
+        },
+        "contradiction_handling": {
+          "ci95_high": 0.875,
+          "ci95_low": 0.45,
+          "mean": 0.6416666666666666,
+          "median": 0.5833333333333333,
+          "n": 4,
+          "stddev": 0.26299556396765833
+        },
+        "correct_primitive_selection": {
+          "ci95_high": 0.4583333333333333,
+          "ci95_low": 0.3333333333333333,
+          "mean": 0.39166666666666666,
+          "median": 0.3666666666666667,
+          "n": 4,
+          "stddev": 0.07876359377087681
+        },
+        "harmful_write_rate": {
+          "ci95_high": 0.11126077586206896,
+          "ci95_low": 0.02844551282051282,
+          "mean": 0.06831335816820097,
+          "median": 0.0548406862745098,
+          "n": 4,
+          "stddev": 0.05210123335860406
+        },
+        "long_horizon_recovery": {
+          "ci95_high": 0.6,
+          "ci95_low": 0.4,
+          "mean": 0.4916666666666667,
+          "median": 0.45,
+          "n": 4,
+          "stddev": 0.12583057392117913
+        },
+        "memory_contamination": {
+          "ci95_high": 0.11126077586206896,
+          "ci95_low": 0.02844551282051282,
+          "mean": 0.06831335816820097,
+          "median": 0.0548406862745098,
+          "n": 4,
+          "stddev": 0.05210123335860406
+        },
+        "memory_precision": {
+          "ci95_high": 0.09859913793103448,
+          "ci95_low": 0.061899038461538464,
+          "mean": 0.08172792492328496,
+          "median": 0.0860906862745098,
+          "n": 4,
+          "stddev": 0.02276050975841234
+        },
+        "memory_recall": {
+          "ci95_high": 1.0,
+          "ci95_low": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "missed_retrieval_rate": {
+          "ci95_high": 1.0,
+          "ci95_low": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "missed_write_rate": {
+          "ci95_high": 0.3666666666666667,
+          "ci95_low": 0.0,
+          "mean": 0.18333333333333335,
+          "median": 0.16666666666666669,
+          "n": 4,
+          "stddev": 0.21343747458109497
+        },
+        "provenance_completeness": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 2,
+          "stddev": 0.0
+        },
+        "retrieval_precision": {
+          "ci95_high": 0.7833333333333333,
+          "ci95_low": 0.6875,
+          "mean": 0.7375,
+          "median": 0.7416666666666667,
+          "n": 4,
+          "stddev": 0.05506729889333061
+        },
+        "retrieval_recall": {
+          "ci95_high": 1.0,
+          "ci95_low": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "stale_belief_rate": {
+          "ci95_high": 0.75,
+          "ci95_low": 0.0,
+          "mean": 0.25,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.5
+        },
+        "structural_quality": {
+          "ci95_high": 0.9,
+          "ci95_low": 0.55,
+          "mean": 0.7125,
+          "median": 0.675,
+          "n": 4,
+          "stddev": 0.21746647251166482
+        },
+        "supersession_correctness": {
+          "ci95_high": 1.0,
+          "ci95_low": 0.0,
+          "mean": 0.5,
+          "median": 0.5,
+          "n": 2,
+          "stddev": 0.7071067811865476
+        },
+        "task_success": {
+          "ci95_high": 0.6,
+          "ci95_low": 0.4,
+          "mean": 0.4916666666666667,
+          "median": 0.45,
+          "n": 4,
+          "stddev": 0.12583057392117913
+        },
+        "unnecessary_retrieval_rate": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.0
+        }
+      },
+      "n": 4
+    },
+    "mindgraph-passive": {
+      "composite": {
+        "ci95_high": 0.48696428571428574,
+        "ci95_low": 0.2920684523809524,
+        "mean": 0.38951636904761905,
+        "median": 0.37922619047619044,
+        "n": 4,
+        "stddev": 0.11878684826067348
+      },
+      "efficiency": {
+        "estimated_inference_cost_usd": {
+          "ci95_high": 0.00088981,
+          "ci95_low": 0.00065509,
+          "mean": 0.00076728,
+          "median": 0.00075694,
+          "n": 4,
+          "stddev": 0.0001377806217627622
+        },
+        "historical_context_tokens": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "input_tokens": {
+          "ci95_high": 1194.0,
+          "ci95_low": 1111.0,
+          "mean": 1152.5,
+          "median": 1151.0,
+          "n": 4,
+          "stddev": 48.03817926052846
+        },
+        "latency_ms": {
+          "ci95_high": 49454.78841653676,
+          "ci95_low": 28121.787187221344,
+          "mean": 39890.01167676179,
+          "median": 42341.101395490114,
+          "n": 4,
+          "stddev": 13199.68435452684
+        },
+        "memory_storage_growth": {
+          "ci95_high": 180.25,
+          "ci95_low": 119.5,
+          "mean": 144.5,
+          "median": 132.0,
+          "n": 4,
+          "stddev": 37.77565353504821
+        },
+        "memory_tool_calls": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "model_calls": {
+          "ci95_high": 5.0,
+          "ci95_low": 4.0,
+          "mean": 4.5,
+          "median": 4.5,
+          "n": 4,
+          "stddev": 0.5773502691896257
+        },
+        "output_tokens": {
+          "ci95_high": 2841.75,
+          "ci95_low": 2016.75,
+          "mean": 2411.0,
+          "median": 2374.5,
+          "n": 4,
+          "stddev": 480.49765868316155
+        },
+        "reasoning_tokens": {
+          "ci95_high": 2774.5,
+          "ci95_low": 2050.5,
+          "mean": 2412.5,
+          "median": 2438.0,
+          "n": 4,
+          "stddev": 445.50383462622034
+        },
+        "retrieved_context_tokens": {
+          "ci95_high": 513.5,
+          "ci95_low": 450.25,
+          "mean": 481.25,
+          "median": 480.0,
+          "n": 4,
+          "stddev": 34.74070619124871
+        },
+        "wall_seconds": {
+          "ci95_high": 106.04478180408478,
+          "ci95_low": 64.45409780740738,
+          "mean": 90.87201088666916,
+          "median": 100.96508431434631,
+          "n": 4,
+          "stddev": 25.532236397092337
+        }
+      },
+      "metrics": {
+        "appropriate_retrieval_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "appropriate_write_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "belief_update_accuracy": {
+          "ci95_high": 0.425,
+          "ci95_low": 0.08333333333333333,
+          "mean": 0.2583333333333333,
+          "median": 0.26666666666666666,
+          "n": 4,
+          "stddev": 0.21147629234082535
+        },
+        "continuity_accuracy": {
+          "ci95_high": 0.375,
+          "ci95_low": 0.0,
+          "mean": 0.175,
+          "median": 0.1,
+          "n": 4,
+          "stddev": 0.23629078131263043
+        },
+        "contradiction_handling": {
+          "ci95_high": 0.8333333333333334,
+          "ci95_low": 0.26666666666666666,
+          "mean": 0.5083333333333333,
+          "median": 0.41666666666666663,
+          "n": 4,
+          "stddev": 0.35
+        },
+        "correct_primitive_selection": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "harmful_write_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "long_horizon_recovery": {
+          "ci95_high": 0.55,
+          "ci95_low": 0.26666666666666666,
+          "mean": 0.4083333333333333,
+          "median": 0.41666666666666663,
+          "n": 4,
+          "stddev": 0.1771690968789108
+        },
+        "memory_contamination": {
+          "ci95_high": 0.13392857142857142,
+          "ci95_low": 0.0,
+          "mean": 0.06547619047619048,
+          "median": 0.041666666666666664,
+          "n": 4,
+          "stddev": 0.0850170051017006
+        },
+        "memory_precision": {
+          "ci95_high": 0.10714285714285714,
+          "ci95_low": 0.08035714285714285,
+          "mean": 0.0974702380952381,
+          "median": 0.1056547619047619,
+          "n": 4,
+          "stddev": 0.017417708200475633
+        },
+        "memory_recall": {
+          "ci95_high": 1.0,
+          "ci95_low": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "missed_retrieval_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "missed_write_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "provenance_completeness": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 2,
+          "stddev": 0.0
+        },
+        "retrieval_precision": {
+          "ci95_high": 0.7833333333333333,
+          "ci95_low": 0.25,
+          "mean": 0.5333333333333333,
+          "median": 0.5666666666666667,
+          "n": 4,
+          "stddev": 0.3030707043774635
+        },
+        "retrieval_recall": {
+          "ci95_high": 0.875,
+          "ci95_low": 0.5,
+          "mean": 0.6666666666666666,
+          "median": 0.5833333333333333,
+          "n": 4,
+          "stddev": 0.23570226039551584
+        },
+        "stale_belief_rate": {
+          "ci95_high": 1.0,
+          "ci95_low": 0.0,
+          "mean": 0.5,
+          "median": 0.5,
+          "n": 4,
+          "stddev": 0.5773502691896257
+        },
+        "structural_quality": {
+          "ci95_high": 0.875,
+          "ci95_low": 0.1875,
+          "mean": 0.5375,
+          "median": 0.575,
+          "n": 4,
+          "stddev": 0.43469337852483253
+        },
+        "supersession_correctness": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 2,
+          "stddev": 0.0
+        },
+        "task_success": {
+          "ci95_high": 0.55,
+          "ci95_low": 0.26666666666666666,
+          "mean": 0.4083333333333333,
+          "median": 0.41666666666666663,
+          "n": 4,
+          "stddev": 0.1771690968789108
+        },
+        "unnecessary_retrieval_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        }
+      },
+      "n": 4
+    },
+    "stateless": {
+      "composite": {
+        "ci95_high": 0.35000000000000003,
+        "ci95_low": 0.05,
+        "mean": 0.15,
+        "median": 0.05,
+        "n": 4,
+        "stddev": 0.2
+      },
+      "efficiency": {
+        "estimated_inference_cost_usd": {
+          "ci95_high": 0.0007148300000000001,
+          "ci95_low": 0.00033893,
+          "mean": 0.0005343,
+          "median": 0.0005258400000000001,
+          "n": 4,
+          "stddev": 0.00020835076705722337
+        },
+        "historical_context_tokens": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "input_tokens": {
+          "ci95_high": 595.75,
+          "ci95_low": 409.5,
+          "mean": 497.75,
+          "median": 465.5,
+          "n": 4,
+          "stddev": 116.92269525916116
+        },
+        "latency_ms": {
+          "ci95_high": 42165.32589572307,
+          "ci95_low": 19906.953770754626,
+          "mean": 31296.526728998288,
+          "median": 31817.300520517165,
+          "n": 4,
+          "stddev": 13040.796322719963
+        },
+        "memory_storage_growth": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "memory_tool_calls": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "model_calls": {
+          "ci95_high": 5.0,
+          "ci95_low": 4.0,
+          "mean": 4.5,
+          "median": 4.5,
+          "n": 4,
+          "stddev": 0.5773502691896257
+        },
+        "output_tokens": {
+          "ci95_high": 2382.75,
+          "ci95_low": 1170.25,
+          "mean": 1766.0,
+          "median": 1745.0,
+          "n": 4,
+          "stddev": 712.6789833672194
+        },
+        "reasoning_tokens": {
+          "ci95_high": 2574.75,
+          "ci95_low": 1076.25,
+          "mean": 1848.75,
+          "median": 1837.5,
+          "n": 4,
+          "stddev": 821.2163235104377
+        },
+        "retrieved_context_tokens": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "wall_seconds": {
+          "ci95_high": 42.1747282743454,
+          "ci95_low": 19.911652743816376,
+          "mean": 31.304204523563385,
+          "median": 31.82623255252838,
+          "n": 4,
+          "stddev": 13.041764081355824
+        }
+      },
+      "metrics": {
+        "appropriate_retrieval_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "appropriate_write_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "belief_update_accuracy": {
+          "ci95_high": 0.30000000000000004,
+          "ci95_low": 0.0,
+          "mean": 0.1,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.2
+        },
+        "continuity_accuracy": {
+          "ci95_high": 0.30000000000000004,
+          "ci95_low": 0.0,
+          "mean": 0.1,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.2
+        },
+        "contradiction_handling": {
+          "ci95_high": 0.75,
+          "ci95_low": 0.0,
+          "mean": 0.25,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.5
+        },
+        "correct_primitive_selection": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "harmful_write_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "long_horizon_recovery": {
+          "ci95_high": 0.30000000000000004,
+          "ci95_low": 0.0,
+          "mean": 0.1,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.2
+        },
+        "memory_contamination": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "memory_precision": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "memory_recall": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "missed_retrieval_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "missed_write_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "provenance_completeness": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 2,
+          "stddev": 0.0
+        },
+        "retrieval_precision": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "retrieval_recall": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "stale_belief_rate": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "structural_quality": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "supersession_correctness": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "task_success": {
+          "ci95_high": 0.30000000000000004,
+          "ci95_low": 0.0,
+          "mean": 0.1,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.2
+        },
+        "unnecessary_retrieval_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        }
+      },
+      "n": 4
+    },
+    "transcript": {
+      "composite": {
+        "ci95_high": 0.9,
+        "ci95_low": 0.5175000000000001,
+        "mean": 0.70875,
+        "median": 0.73,
+        "n": 4,
+        "stddev": 0.2235462293725096
+      },
+      "efficiency": {
+        "estimated_inference_cost_usd": {
+          "ci95_high": 0.00088904,
+          "ci95_low": 0.00057326,
+          "mean": 0.00069576,
+          "median": 0.00060884,
+          "n": 4,
+          "stddev": 0.00020078320248467004
+        },
+        "historical_context_tokens": {
+          "ci95_high": 955.25,
+          "ci95_low": 442.0,
+          "mean": 697.25,
+          "median": 694.5,
+          "n": 4,
+          "stddev": 287.42346807454675
+        },
+        "input_tokens": {
+          "ci95_high": 1464.5,
+          "ci95_low": 929.25,
+          "mean": 1207.0,
+          "median": 1230.0,
+          "n": 4,
+          "stddev": 338.11536492741646
+        },
+        "latency_ms": {
+          "ci95_high": 49836.50363518973,
+          "ci95_low": 24844.508209527703,
+          "mean": 35245.2480107313,
+          "median": 31054.732187476475,
+          "n": 4,
+          "stddev": 14673.650611811674
+        },
+        "memory_storage_growth": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "memory_tool_calls": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "model_calls": {
+          "ci95_high": 5.0,
+          "ci95_low": 4.0,
+          "mean": 4.5,
+          "median": 4.5,
+          "n": 4,
+          "stddev": 0.5773502691896257
+        },
+        "output_tokens": {
+          "ci95_high": 2776.5,
+          "ci95_low": 1780.0,
+          "mean": 2140.0,
+          "median": 1861.0,
+          "n": 4,
+          "stddev": 640.7599654576848
+        },
+        "reasoning_tokens": {
+          "ci95_high": 3024.25,
+          "ci95_low": 1724.5,
+          "mean": 2201.25,
+          "median": 1838.5,
+          "n": 4,
+          "stddev": 833.8574518465372
+        },
+        "retrieved_context_tokens": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "wall_seconds": {
+          "ci95_high": 49.84417688846588,
+          "ci95_low": 24.85446047782898,
+          "mean": 35.25271677970886,
+          "median": 31.059512972831726,
+          "n": 4,
+          "stddev": 14.672802547389097
+        }
+      },
+      "metrics": {
+        "appropriate_retrieval_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "appropriate_write_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "belief_update_accuracy": {
+          "ci95_high": 1.0,
+          "ci95_low": 0.55,
+          "mean": 0.775,
+          "median": 0.8,
+          "n": 4,
+          "stddev": 0.26299556396765833
+        },
+        "continuity_accuracy": {
+          "ci95_high": 1.0,
+          "ci95_low": 0.55,
+          "mean": 0.775,
+          "median": 0.8,
+          "n": 4,
+          "stddev": 0.26299556396765833
+        },
+        "contradiction_handling": {
+          "ci95_high": 1.0,
+          "ci95_low": 0.55,
+          "mean": 0.775,
+          "median": 0.8,
+          "n": 4,
+          "stddev": 0.26299556396765833
+        },
+        "correct_primitive_selection": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "harmful_write_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "long_horizon_recovery": {
+          "ci95_high": 1.0,
+          "ci95_low": 0.55,
+          "mean": 0.775,
+          "median": 0.8,
+          "n": 4,
+          "stddev": 0.26299556396765833
+        },
+        "memory_contamination": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "memory_precision": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "memory_recall": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "missed_retrieval_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "missed_write_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "provenance_completeness": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 2,
+          "stddev": 0.0
+        },
+        "retrieval_precision": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "retrieval_recall": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "stale_belief_rate": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "structural_quality": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 4,
+          "stddev": 0.0
+        },
+        "supersession_correctness": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "task_success": {
+          "ci95_high": 1.0,
+          "ci95_low": 0.55,
+          "mean": 0.775,
+          "median": 0.8,
+          "n": 4,
+          "stddev": 0.26299556396765833
+        },
+        "unnecessary_retrieval_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        }
+      },
+      "n": 4
+    }
+  },
+  "failures": [
+    {
+      "answer": "{\n  \"choice\": \"car\",\n  \"avoid\": \"public_transport\",\n  \"basis\": \"20-mile trips are typically most efficient by car for regional travel where public transport may lack coverage or frequency.\"\n}",
+      "checks": {
+        "avoid": false,
+        "basis": false,
+        "choice": false
+      },
+      "condition": "stateless",
+      "scenario_id": "preference-420042-00",
+      "score": 0.0
+    },
+    {
+      "answer": "{\n  \"choice\": \"rental car\",\n  \"avoid\": \"train\",\n  \"basis\": \"Correction: Traveler-773 now prefers rental car instead of train for regional trips. This supersedes the earlier preference.\"\n}",
+      "checks": {
+        "avoid": false,
+        "basis": false,
+        "choice": true
+      },
+      "condition": "flat",
+      "scenario_id": "preference-420042-00",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "```json\n{\n  \"choice\": \"train\",\n  \"avoid\": [\"unsealed roads\"],\n  \"basis\": [\n    \"Claim: Traveler-773 prefers train for regional trips (confidence=1.00)\",\n    \"Constraint: Avoid unsealed roads for Traveler-773's trips (confidence=0.95)\"\n  ]\n}\n```",
+      "checks": {
+        "avoid": true,
+        "basis": false,
+        "choice": false
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "preference-420042-00",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"rental car\", \"avoid\": \"unsealed roads\", \"basis\": \"Traveler-773 now prefers rental car instead of train for regional trips\"}",
+      "checks": {
+        "avoid": true,
+        "basis": false,
+        "choice": true
+      },
+      "condition": "mindgraph-active",
+      "scenario_id": "preference-420042-00",
+      "score": 0.6666666666666666
+    },
+    {
+      "answer": "```json\n{\n  \"launch_date\": \"early 2024\",\n  \"region\": \"North America\",\n  \"old_claim_status\": \"retracted\",\n  \"evidence\": \"internal documents and supply chain issues\",\n  \"europe_status\": \"unknown\"\n}\n```",
+      "checks": {
+        "europe_status": true,
+        "evidence": false,
+        "launch_date": false,
+        "old_claim_status": true,
+        "region": false
+      },
+      "condition": "stateless",
+      "scenario_id": "belief-420042-00",
+      "score": 0.4
+    },
+    {
+      "answer": "{\n  \"launch_date\": \"March 10\",\n  \"region\": \"US\",\n  \"old_claim_status\": \"retracted\",\n  \"evidence\": \"Source Alpha (provisional claim)\",\n  \"europe_status\": \"unspecified\"\n}",
+      "checks": {
+        "europe_status": true,
+        "evidence": false,
+        "launch_date": false,
+        "old_claim_status": true,
+        "region": true
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "belief-420042-00",
+      "score": 0.6
+    },
+    {
+      "answer": "{\n  \"launch_date\": \"unknown\",\n  \"region\": \"unknown\",\n  \"old_claim_status\": \"retracted\",\n  \"evidence\": \"Source Alpha's claim about Atlas launch is cited in a retracted post, and a forum repeats the old date citing only Alpha's retracted post.\",\n  \"europe_status\": \"unknown\"\n}",
+      "checks": {
+        "europe_status": true,
+        "evidence": false,
+        "launch_date": false,
+        "old_claim_status": true,
+        "region": false
+      },
+      "condition": "mindgraph-active",
+      "scenario_id": "belief-420042-00",
+      "score": 0.4
+    },
+    {
+      "answer": "",
+      "checks": {
+        "avoid_repeat": false,
+        "completed": false,
+        "decision": false,
+        "failed": false,
+        "next_action": false
+      },
+      "condition": "stateless",
+      "scenario_id": "project-420042-00",
+      "score": 0.0
+    },
+    {
+      "answer": "```json\n{\n  \"completed\": [\"design mapping\"],\n  \"failed\": [\"implement parser\"],\n  \"next_action\": \"update parser implementation to validate against schema-v2 before parsing\",\n  \"decision\": \"integrate schema-v2 validation into parser to meet memory constraints\",\n  \"avoid_repeat\": \"ensure schema validation precedes parsing to prevent reoccurrence\"\n}\n```",
+      "checks": {
+        "avoid_repeat": false,
+        "completed": true,
+        "decision": false,
+        "failed": true,
+        "next_action": true
+      },
+      "condition": "transcript",
+      "scenario_id": "project-420042-00",
+      "score": 0.6
+    },
+    {
+      "answer": "{\n  \"completed\": [\"design mapping\"],\n  \"failed\": [\"parser attempt (missing schema)\"],\n  \"next_action\": \"implement parser with schema-v2 validation\",\n  \"decision\": \"streaming parsing to stay under memory limit\",\n  \"avoid_repeat\": \"skip schema-less parser attempts\"\n}",
+      "checks": {
+        "avoid_repeat": false,
+        "completed": true,
+        "decision": true,
+        "failed": true,
+        "next_action": false
+      },
+      "condition": "flat",
+      "scenario_id": "project-420042-00",
+      "score": 0.6
+    },
+    {
+      "answer": "{\n  \"completed\": [\"design mapping\"],\n  \"failed\": [],\n  \"next_action\": [\"implement parser\"],\n  \"decision\": \"Proceed with parser implementation as next workflow step\",\n  \"avoid_repeat\": \"Do not re-execute completed design mapping phase\"\n}",
+      "checks": {
+        "avoid_repeat": false,
+        "completed": true,
+        "decision": false,
+        "failed": false,
+        "next_action": false
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "project-420042-00",
+      "score": 0.2
+    },
+    {
+      "answer": "{\n  \"completed\": [\"design mapping\"],\n  \"failed\": [\"parser implementation\"],\n  \"next_action\": \"Address the missing schema issue to successfully implement the parser.\",\n  \"decision\": \"unknown\",\n  \"avoid_repeat\": [\"unknown\"]\n}",
+      "checks": {
+        "avoid_repeat": false,
+        "completed": true,
+        "decision": false,
+        "failed": true,
+        "next_action": false
+      },
+      "condition": "mindgraph-active",
+      "scenario_id": "project-420042-00",
+      "score": 0.4
+    },
+    {
+      "answer": "{\n  \"similar_method\": \"unknown\",\n  \"control_method\": \"unknown\",\n  \"failure_cause\": \"unknown\",\n  \"scope\": \"unknown\"\n}",
+      "checks": {
+        "control_method": false,
+        "failure_cause": false,
+        "scope": false,
+        "similar_method": false
+      },
+      "condition": "stateless",
+      "scenario_id": "failure-420042-00",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"Use a robust TSV parsing library (e.g., Python's `csv` module with `delimiter='\\t'` or pandas `read_csv` with `sep='\\t'`) to handle quoted fields with embedded tabs.\", \"control_method\": \"Use binary parsing tools (e.g., Python's `struct` module or `numpy.frombuffer`) to decode fields based on predefined byte offsets and data types.\", \"failure_cause\": \"Manual splitting on tab characters fails for quoted fields with embedded tabs; delimiter-based assumptions fail for fixed-width binary formats.\", \"scope\": \"Quoted delimited text with tab delimiters; fixed-width binary headers requiring schema-aligned byte decoding.\"}",
+      "checks": {
+        "control_method": false,
+        "failure_cause": true,
+        "scope": false,
+        "similar_method": true
+      },
+      "condition": "transcript",
+      "scenario_id": "failure-420042-00",
+      "score": 0.5
+    },
+    {
+      "answer": "{\n  \"similar_method\": \"Use robust tab parser to handle quoted fields with embedded commas\",\n  \"control_method\": \"Parse fixed-width binary header using position-based field extraction\",\n  \"failure_cause\": \"Simple comma splitting failed due to quoted fields containing commas\",\n  \"scope\": \"Delimited text with quoting (similar) and fixed-width binary (control)\"\n}",
+      "checks": {
+        "control_method": true,
+        "failure_cause": true,
+        "scope": false,
+        "similar_method": true
+      },
+      "condition": "flat",
+      "scenario_id": "failure-420042-00",
+      "score": 0.75
+    },
+    {
+      "answer": "{\n  \"similar_method\": false,\n  \"control_method\": \"fixed-width binary parsing with no delimiter handling\",\n  \"failure_cause\": \"unhandled commas within quoted fields in delimited exports\",\n  \"scope\": \"control: fixed-width binary headers, task: quoted delimited exports with embedded commas\"\n}",
+      "checks": {
+        "control_method": true,
+        "failure_cause": true,
+        "scope": false,
+        "similar_method": false
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "failure-420042-00",
+      "score": 0.5
+    },
+    {
+      "answer": "{\n  \"similar_method\": \"Use a parsing method that accounts for quoted fields containing commas\",\n  \"control_method\": \"Decode a fixed-width binary header\",\n  \"failure_cause\": \"Parsing failed because quoted fields can contain comma delimiters\",\n  \"scope\": \"Import another quoted delimited export\"\n}",
+      "checks": {
+        "control_method": true,
+        "failure_cause": true,
+        "scope": false,
+        "similar_method": false
+      },
+      "condition": "mindgraph-active",
+      "scenario_id": "failure-420042-00",
+      "score": 0.5
+    }
+  ],
+  "metrics": [
+    "appropriate_retrieval_rate",
+    "appropriate_write_rate",
+    "belief_update_accuracy",
+    "continuity_accuracy",
+    "contradiction_handling",
+    "correct_primitive_selection",
+    "harmful_write_rate",
+    "long_horizon_recovery",
+    "memory_contamination",
+    "memory_precision",
+    "memory_recall",
+    "missed_retrieval_rate",
+    "missed_write_rate",
+    "provenance_completeness",
+    "retrieval_precision",
+    "retrieval_recall",
+    "stale_belief_rate",
+    "structural_quality",
+    "supersession_correctness",
+    "task_success",
+    "unnecessary_retrieval_rate"
+  ],
+  "paired": {
+    "flat": {
+      "paired_standardized_effect": 3.291899919625657,
+      "task_success_delta_vs_stateless": {
+        "ci95_high": 0.7125,
+        "ci95_low": 0.39999999999999997,
+        "mean": 0.5708333333333333,
+        "median": 0.6,
+        "n": 4,
+        "stddev": 0.17340543372237344
+      },
+      "task_success_relative_vs_stateless": 5.708333333333333
+    },
+    "mindgraph-active": {
+      "paired_standardized_effect": 1.3823529411764706,
+      "task_success_delta_vs_stateless": {
+        "ci95_high": 0.6,
+        "ci95_low": 0.125,
+        "mean": 0.39166666666666666,
+        "median": 0.45,
+        "n": 4,
+        "stddev": 0.2833333333333333
+      },
+      "task_success_relative_vs_stateless": 3.9166666666666665
+    },
+    "mindgraph-passive": {
+      "paired_standardized_effect": 2.1652612231284154,
+      "task_success_delta_vs_stateless": {
+        "ci95_high": 0.425,
+        "ci95_low": 0.19999999999999998,
+        "mean": 0.30833333333333335,
+        "median": 0.26666666666666666,
+        "n": 4,
+        "stddev": 0.14240006242195885
+      },
+      "task_success_relative_vs_stateless": 3.0833333333333335
+    },
+    "transcript": {
+      "paired_standardized_effect": 3.044166413411457,
+      "task_success_delta_vs_stateless": {
+        "ci95_high": 0.9,
+        "ci95_low": 0.525,
+        "mean": 0.675,
+        "median": 0.6,
+        "n": 4,
+        "stddev": 0.2217355782608345
+      },
+      "task_success_relative_vs_stateless": 6.75
+    }
+  }
+}

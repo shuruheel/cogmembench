@@ -1,0 +1,43 @@
+stateless:
+  persistent: false
+  replay: false
+  retrieval: none
+  tools: []
+transcript:
+  persistent: false
+  replay: full
+  retrieval: none
+  tools: []
+flat:
+  persistent: true
+  retrieval: bm25
+  top_k: 5
+  typed: false
+flat-hybrid:
+  persistent: true
+  retrieval: bm25_vector_rrf
+  top_k: 5
+  typed: false
+  fusion: rrf-k60
+mindgraph-passive:
+  persistent: true
+  retrieval: predetermined
+  top_k: 5
+  model_memory_tools: false
+  session_ingestion: true
+mindgraph-active-prefetch:
+  persistent: true
+  retrieval: model_and_prefetch
+  top_k: 5
+  model_memory_tools: true
+  session_ingestion: true
+mindgraph-active-pull:
+  persistent: true
+  retrieval: model_only
+  top_k: 5
+  model_memory_tools: true
+  session_ingestion: true
+oracle-policy:
+  persistent: true
+  retrieval: deterministic
+  model_memory_tools: scripted

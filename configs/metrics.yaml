@@ -1,0 +1,10 @@
+composite:
+  task_success: 0.30
+  continuity_accuracy: 0.20
+  belief_update_accuracy: 0.15
+  contradiction_handling: 0.10
+  long_horizon_recovery: 0.10
+  memory_precision: 0.05
+  memory_recall: 0.05
+  inverse_memory_contamination: 0.05
+

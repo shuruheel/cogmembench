@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-07-17",
+  "scope": "Credential-free implementation of docs/COGNITIVE_SUBSTRATE_UPGRADE_PLAN.md",
+  "status_definitions": {
+    "implemented_and_validated": "Code or documentation exists and passed credential-free mechanical validation.",
+    "implemented_awaiting_live_execution": "The implementation and test doubles exist; a real provider or service run needs credentials or a live endpoint.",
+    "implemented_awaiting_external_human_work": "Packets, registries, thresholds, or procedures exist; the remaining act must be performed by independent people or vendors.",
+    "publication_execution_deferred": "The protocol is executable, but running or publishing it before upstream gates pass would violate the plan.",
+    "owner_signoff_required": "The artifact is ready, but a governance decision cannot be declared by the implementation itself."
+  },
+  "credential_free_rehearsal": {
+    "evidence": "results/aggregated/cognitive-v2-publication-rehearsal-20260717.json",
+    "scale": "publication",
+    "scenario_count": 450,
+    "families": 3,
+    "worlds_per_family": 150,
+    "gold_validation_passed": true,
+    "generator_validation_passed": true,
+    "counterfactual_validation_passed": true,
+    "release_contamination_audit_passed": true,
+    "development_overlap": {
+      "public_hash": 0,
+      "causal_content": 0,
+      "causal_world": 0,
+      "structural_fingerprint": 0,
+      "realization_pattern": 0
+    },
+    "scientific_claim_boundary": "This is a mechanical rehearsal, not model or external-substrate evidence."
+  },
+  "phases": {
+    "A": {
+      "title": "Research specification",
+      "implementation_status": "implemented_and_validated",
+      "deliverables": {
+        "verified_literature_matrix_and_novelty_statement": "implemented_and_validated",
+        "formal_definition_and_primary_research_questions": "implemented_and_validated",
+        "artifact_relation_bitemporal_and_clock_specifications": "implemented_and_validated",
+        "outcome_instrumented_and_adapter_contracts": "implemented_and_validated",
+        "run_cost_model": "implemented_and_validated",
+        "external_reviewer_shortlist": "implemented_and_validated"
+      },
+      "exit_status": "owner_signoff_required"
+    },
+    "B": {
+      "title": "Harness v2 and walking skeleton",
+      "implementation_status": "implemented_awaiting_live_execution",
+      "deliverables": {
+        "adapter_v2": "implemented_and_validated",
+        "event_sourced_schema": "implemented_and_validated",
+        "cognitive_artifact_and_audit_receipt_schema": "implemented_and_validated",
+        "condition_contracts": "implemented_and_validated",
+        "reference_flat_summary_vector_hybrid_and_mindgraph_execution": "implemented_and_validated",
+        "mem0_zep_and_cognee_walking_skeletons": "implemented_awaiting_live_execution",
+        "schema_v1_compatibility": "implemented_and_validated"
+      },
+      "exit_status": "implemented_awaiting_live_execution"
+    },
+    "C": {
+      "title": "Bitemporal belief-revision vertical slice",
+      "implementation_status": "implemented_awaiting_live_execution",
+      "deliverables": {
+        "generator_and_revision_oracle": "implemented_and_validated",
+        "rq3_rq4_evaluators": "implemented_and_validated",
+        "development_steering_pipeline": "implemented_and_validated",
+        "external_system_development_run": "implemented_awaiting_live_execution"
+      },
+      "exit_status": "implemented_awaiting_live_execution"
+    },
+    "D": {
+      "title": "Remaining core generators and environment",
+      "implementation_status": "implemented_and_validated",
+      "deliverables": {
+        "derivation_dag_and_rederivability_controls": "implemented_and_validated",
+        "service_incident_simulator": "implemented_and_validated",
+        "counterfactual_and_snapshot_oracles": "implemented_and_validated",
+        "structural_diversity_and_leakage_tests": "implemented_and_validated"
+      },
+      "exit_status": "implemented_and_validated"
+    },
+    "E": {
+      "title": "Evaluators and metrics",
+      "implementation_status": "implemented_awaiting_external_human_work",
+      "deliverables": {
+        "execution_rationality_recursive_temporal_revision_audit_policy_calibration_efficiency": "implemented_and_validated",
+        "depth_and_repair_curves": "implemented_and_validated",
+        "hierarchical_aggregation_and_uncertainty": "implemented_and_validated",
+        "adversarial_evaluator_corpus": "implemented_and_validated",
+        "blinded_human_agreement_study": "implemented_awaiting_external_human_work"
+      },
+      "exit_status": "implemented_awaiting_external_human_work"
+    },
+    "F": {
+      "title": "Core suites, baselines, and external adapters",
+      "implementation_status": "implemented_awaiting_live_execution",
+      "deliverables": {
+        "target_scale_core_suites_and_difficulty_tiers": "implemented_and_validated",
+        "publication_holdout_realization_pack": "implemented_and_validated",
+        "independently_authored_realization_pack": "implemented_awaiting_external_human_work",
+        "all_required_baselines": "implemented_and_validated",
+        "mem0_zep_cognee_adapters": "implemented_and_validated",
+        "natural_and_matched_budget_run_configuration": "implemented_and_validated",
+        "capability_and_cost_manifests": "implemented_and_validated",
+        "lite_tier": "implemented_and_validated",
+        "live_external_adapter_matrix": "implemented_awaiting_live_execution"
+      },
+      "exit_status": "implemented_awaiting_live_execution"
+    },
+    "G": {
+      "title": "Pilot and protocol freeze",
+      "implementation_status": "publication_execution_deferred",
+      "deliverables": {
+        "multi_model_pilot": "implemented_awaiting_live_execution",
+        "human_spot_audit_and_agreement_report": "implemented_awaiting_external_human_work",
+        "failure_taxonomy": "implemented_and_validated",
+        "power_analysis_and_matrix_cost_tools": "implemented_and_validated",
+        "vendor_review_window": "implemented_awaiting_external_human_work",
+        "immutable_hash_registered_protocol_freeze": "implemented_and_validated",
+        "actual_publication_freeze": "publication_execution_deferred"
+      },
+      "exit_status": "publication_execution_deferred"
+    },
+    "H": {
+      "title": "Publication study and launch",
+      "implementation_status": "publication_execution_deferred",
+      "deliverables": {
+        "held_out_execution_pipeline": "implemented_and_validated",
+        "append_only_raw_traces_and_manifests": "implemented_and_validated",
+        "primary_ablation_interaction_cost_and_failure_analysis": "implemented_and_validated",
+        "reproducibility_lite_and_adapter_packages": "implemented_and_validated",
+        "credentialed_publication_runs": "publication_execution_deferred",
+        "arxiv_repository_and_launch_materials": "publication_execution_deferred"
+      },
+      "exit_status": "publication_execution_deferred"
+    }
+  },
+  "gates": {
+    "0": {
+      "status": "owner_signoff_required",
+      "reason": "The literature audit supports the narrow intersection claim, but identity and scope approval is a governance act."
+    },
+    "1": {
+      "status": "owner_signoff_required",
+      "reason": "Contracts, endpoints, statistical unit, and cost model are implemented; formal freeze/signoff remains an owner action."
+    },
+    "2": {
+      "status": "implemented_and_validated",
+      "reason": "All mechanical generator, derivability, diversity, leakage, and re-derivability checks pass at 450-world shape."
+    },
+    "3": {
+      "status": "implemented_awaiting_external_human_work",
+      "reason": "Gold and adversarial corpora pass; preregistered independent agreement has not been collected."
+    },
+    "4": {
+      "status": "implemented_awaiting_live_execution",
+      "reason": "Calibration, ceiling/floor, cost, and power tooling exists; representative pinned-model observations are required."
+    },
+    "5": {
+      "status": "implemented_awaiting_live_execution",
+      "reason": "Local/reference and MindGraph evidence exists; the full Mem0/Zep/Cognee protocol requires live services and credentials."
+    },
+    "6": {
+      "status": "publication_execution_deferred",
+      "reason": "A frozen multi-model pilot, complete costs, failure review, power lock, and human/vendor inputs are still required."
+    },
+    "7": {
+      "status": "publication_execution_deferred",
+      "reason": "Freeze tooling is complete, but creating the real freeze before Gate 6 would violate the protocol."
+    },
+    "8": {
+      "status": "publication_execution_deferred",
+      "reason": "Execution and publication must follow the actual Gate 7 freeze."
+    }
+  }
+}

@@ -1,0 +1,6491 @@
+{
+  "by_family": {
+    "belief_revision": {
+      "flat": {
+        "ci95_high": 0.0,
+        "ci95_low": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "n": 10,
+        "stddev": 0.0
+      },
+      "mindgraph-active-prefetch": {
+        "ci95_high": 0.0,
+        "ci95_low": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "n": 10,
+        "stddev": 0.0
+      },
+      "mindgraph-passive": {
+        "ci95_high": 0.0,
+        "ci95_low": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "n": 10,
+        "stddev": 0.0
+      },
+      "stateless": {
+        "ci95_high": 0.0,
+        "ci95_low": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "n": 10,
+        "stddev": 0.0
+      },
+      "transcript": {
+        "ci95_high": 0.0,
+        "ci95_low": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "n": 10,
+        "stddev": 0.0
+      }
+    },
+    "failure_learning": {
+      "flat": {
+        "ci95_high": 0.075,
+        "ci95_low": 0.0,
+        "mean": 0.025,
+        "median": 0.0,
+        "n": 10,
+        "stddev": 0.07905694150420949
+      },
+      "mindgraph-active-prefetch": {
+        "ci95_high": 0.075,
+        "ci95_low": 0.0,
+        "mean": 0.025,
+        "median": 0.0,
+        "n": 10,
+        "stddev": 0.07905694150420949
+      },
+      "mindgraph-passive": {
+        "ci95_high": 0.075,
+        "ci95_low": 0.0,
+        "mean": 0.025,
+        "median": 0.0,
+        "n": 10,
+        "stddev": 0.07905694150420949
+      },
+      "stateless": {
+        "ci95_high": 0.075,
+        "ci95_low": 0.0,
+        "mean": 0.025,
+        "median": 0.0,
+        "n": 10,
+        "stddev": 0.07905694150420949
+      },
+      "transcript": {
+        "ci95_high": 0.15,
+        "ci95_low": 0.0,
+        "mean": 0.05,
+        "median": 0.0,
+        "n": 10,
+        "stddev": 0.15811388300841897
+      }
+    },
+    "preference_continuity": {
+      "flat": {
+        "ci95_high": 0.3333333333333333,
+        "ci95_low": 0.3333333333333333,
+        "mean": 0.3333333333333333,
+        "median": 0.3333333333333333,
+        "n": 10,
+        "stddev": 0.0
+      },
+      "mindgraph-active-prefetch": {
+        "ci95_high": 0.31666666666666665,
+        "ci95_low": 0.21666666666666665,
+        "mean": 0.26666666666666666,
+        "median": 0.3333333333333333,
+        "n": 10,
+        "stddev": 0.08606629658238704
+      },
+      "mindgraph-passive": {
+        "ci95_high": 0.3333333333333333,
+        "ci95_low": 0.3333333333333333,
+        "mean": 0.3333333333333333,
+        "median": 0.3333333333333333,
+        "n": 10,
+        "stddev": 0.0
+      },
+      "stateless": {
+        "ci95_high": 0.0,
+        "ci95_low": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "n": 10,
+        "stddev": 0.0
+      },
+      "transcript": {
+        "ci95_high": 0.3333333333333333,
+        "ci95_low": 0.3333333333333333,
+        "mean": 0.3333333333333333,
+        "median": 0.3333333333333333,
+        "n": 10,
+        "stddev": 0.0
+      }
+    },
+    "project_continuation": {
+      "flat": {
+        "ci95_high": 0.09000000000000001,
+        "ci95_low": 0.0,
+        "mean": 0.030000000000000006,
+        "median": 0.0,
+        "n": 10,
+        "stddev": 0.09486832980505139
+      },
+      "mindgraph-active-prefetch": {
+        "ci95_high": 0.09000000000000001,
+        "ci95_low": 0.0,
+        "mean": 0.030000000000000006,
+        "median": 0.0,
+        "n": 10,
+        "stddev": 0.09486832980505139
+      },
+      "mindgraph-passive": {
+        "ci95_high": 0.09000000000000001,
+        "ci95_low": 0.0,
+        "mean": 0.030000000000000006,
+        "median": 0.0,
+        "n": 10,
+        "stddev": 0.09486832980505139
+      },
+      "stateless": {
+        "ci95_high": 0.0,
+        "ci95_low": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "n": 10,
+        "stddev": 0.0
+      },
+      "transcript": {
+        "ci95_high": 0.09000000000000001,
+        "ci95_low": 0.0,
+        "mean": 0.030000000000000006,
+        "median": 0.0,
+        "n": 10,
+        "stddev": 0.09486832980505139
+      }
+    }
+  },
+  "composite_weights": {
+    "belief_update_accuracy": 0.15,
+    "continuity_accuracy": 0.2,
+    "contradiction_handling": 0.1,
+    "inverse_memory_contamination": 0.05,
+    "long_horizon_recovery": 0.1,
+    "memory_precision": 0.05,
+    "memory_recall": 0.05,
+    "task_success": 0.3
+  },
+  "conditions": {
+    "flat": {
+      "composite": {
+        "ci95_high": 0.27165064102564096,
+        "ci95_low": 0.19952068764568762,
+        "mean": 0.23400349650349644,
+        "median": 0.19090909090909092,
+        "n": 40,
+        "stddev": 0.11755712387604438
+      },
+      "efficiency": {
+        "agent_total_tokens": {
+          "ci95_high": 1067.675,
+          "ci95_low": 958.1,
+          "mean": 1012.75,
+          "median": 1034.0,
+          "n": 40,
+          "stddev": 184.80422766836955
+        },
+        "embedding_calls": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "embedding_input_items": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "embedding_input_tokens": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "embedding_latency_ms": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "estimated_embedding_cost_usd": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "estimated_inference_cost_usd": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "evaluation_checkpoints": {
+          "ci95_high": 2.0,
+          "ci95_low": 2.0,
+          "mean": 2.0,
+          "median": 2.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "historical_context_tokens": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "input_tokens": {
+          "ci95_high": 956.325,
+          "ci95_low": 868.975,
+          "mean": 912.45,
+          "median": 914.0,
+          "n": 40,
+          "stddev": 141.19416527495855
+        },
+        "latency_ms": {
+          "ci95_high": 13.138946081744507,
+          "ci95_low": 1.4712429227074608,
+          "mean": 5.958112591179088,
+          "median": 0.8561880677007139,
+          "n": 40,
+          "stddev": 21.248090514619165
+        },
+        "lifecycle_tokens": {
+          "ci95_high": 1067.675,
+          "ci95_low": 958.1,
+          "mean": 1012.75,
+          "median": 1034.0,
+          "n": 40,
+          "stddev": 184.80422766836955
+        },
+        "memory_construction_tokens": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "memory_source_tokens": {
+          "ci95_high": 193.95,
+          "ci95_low": 169.1,
+          "mean": 181.925,
+          "median": 189.0,
+          "n": 40,
+          "stddev": 41.11359342240184
+        },
+        "memory_storage_growth": {
+          "ci95_high": 10.4,
+          "ci95_low": 9.55,
+          "mean": 10.0,
+          "median": 10.0,
+          "n": 40,
+          "stddev": 1.4322297480788657
+        },
+        "memory_tool_calls": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "model_calls": {
+          "ci95_high": 6.225,
+          "ci95_low": 5.775,
+          "mean": 6.0,
+          "median": 6.0,
+          "n": 40,
+          "stddev": 0.7161148740394329
+        },
+        "output_tokens": {
+          "ci95_high": 113.875,
+          "ci95_low": 86.175,
+          "mean": 100.3,
+          "median": 109.0,
+          "n": 40,
+          "stddev": 45.96442325460209
+        },
+        "provider_retry_count": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "read_context_tokens": {
+          "ci95_high": 416.275,
+          "ci95_low": 366.35,
+          "mean": 391.625,
+          "median": 415.5,
+          "n": 40,
+          "stddev": 82.26557603274895
+        },
+        "reasoning_tokens": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "retrieved_context_tokens": {
+          "ci95_high": 416.275,
+          "ci95_low": 366.35,
+          "mean": 391.625,
+          "median": 415.5,
+          "n": 40,
+          "stddev": 82.26557603274895
+        },
+        "wall_seconds": {
+          "ci95_high": 0.05285593271255493,
+          "ci95_low": 0.02357526421546936,
+          "mean": 0.036858266592025755,
+          "median": 0.015313148498535156,
+          "n": 40,
+          "stddev": 0.0477562075110487
+        }
+      },
+      "metrics": {
+        "appropriate_retrieval_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "appropriate_write_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "belief_update_accuracy": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 10,
+          "stddev": 0.0
+        },
+        "context_compression_ratio": {
+          "ci95_high": 0.46661755980296177,
+          "ci95_low": 0.4598736084463364,
+          "mean": 0.46317428201327465,
+          "median": 0.46225977920130845,
+          "n": 40,
+          "stddev": 0.011125103301057678
+        },
+        "continuity_accuracy": {
+          "ci95_high": 0.3333333333333333,
+          "ci95_low": 0.3333333333333333,
+          "mean": 0.3333333333333333,
+          "median": 0.3333333333333333,
+          "n": 10,
+          "stddev": 0.0
+        },
+        "contradiction_handling": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 10,
+          "stddev": 0.0
+        },
+        "correct_primitive_selection": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "harmful_write_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "long_horizon_recovery": {
+          "ci95_high": 0.07,
+          "ci95_low": 0.0,
+          "mean": 0.027500000000000004,
+          "median": 0.0,
+          "n": 20,
+          "stddev": 0.08503095411610255
+        },
+        "memory_contamination": {
+          "ci95_high": 0.385,
+          "ci95_low": 0.35270833333333335,
+          "mean": 0.37041666666666667,
+          "median": 0.3875,
+          "n": 40,
+          "stddev": 0.051644949943831446
+        },
+        "memory_precision": {
+          "ci95_high": 0.4072916666666667,
+          "ci95_low": 0.39395833333333335,
+          "mean": 0.4,
+          "median": 0.4,
+          "n": 40,
+          "stddev": 0.021926450482675733
+        },
+        "memory_recall": {
+          "ci95_high": 0.9333333333333333,
+          "ci95_low": 0.8666666666666666,
+          "mean": 0.9,
+          "median": 1.0,
+          "n": 40,
+          "stddev": 0.11036071393157612
+        },
+        "missed_retrieval_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "missed_write_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "provenance_completeness": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 20,
+          "stddev": 0.0
+        },
+        "redundant_write_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "retrieval_precision": {
+          "ci95_high": 0.7967559523809524,
+          "ci95_low": 0.7230952380952381,
+          "mean": 0.7591369047619048,
+          "median": 0.7142857142857143,
+          "n": 40,
+          "stddev": 0.11688889449523093
+        },
+        "retrieval_recall": {
+          "ci95_high": 1.0,
+          "ci95_low": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "retrieved_useful_context_tokens": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "stale_belief_rate": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "structural_quality": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "supersession_correctness": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 20,
+          "stddev": 0.0
+        },
+        "task_success": {
+          "ci95_high": 0.145,
+          "ci95_low": 0.05,
+          "mean": 0.09708333333333333,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.15077612599791843
+        },
+        "task_success_per_1k_read_tokens": {
+          "ci95_high": 0.36001214645960744,
+          "ci95_low": 0.12536895330055917,
+          "mean": 0.24504753496461626,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.38356337739720703
+        },
+        "tokens_per_success": {
+          "ci95_high": 3499.861111111111,
+          "ci95_low": 2953.25,
+          "mean": 3183.527777777778,
+          "median": 2962.5,
+          "n": 12,
+          "stddev": 513.0778281548596
+        },
+        "unnecessary_retrieval_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        }
+      },
+      "n": 40
+    },
+    "mindgraph-active-prefetch": {
+      "composite": {
+        "ci95_high": 0.29249833499833494,
+        "ci95_low": 0.23772832326403753,
+        "mean": 0.2636883751169465,
+        "median": 0.22727272727272727,
+        "n": 40,
+        "stddev": 0.09186083116016447
+      },
+      "efficiency": {
+        "agent_total_tokens": {
+          "ci95_high": 5128.7,
+          "ci95_low": 4524.65,
+          "mean": 4819.525,
+          "median": 4564.5,
+          "n": 40,
+          "stddev": 973.9637487988755
+        },
+        "embedding_calls": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "embedding_input_items": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "embedding_input_tokens": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "embedding_latency_ms": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "estimated_embedding_cost_usd": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "estimated_inference_cost_usd": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "evaluation_checkpoints": {
+          "ci95_high": 2.0,
+          "ci95_low": 2.0,
+          "mean": 2.0,
+          "median": 2.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "historical_context_tokens": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "input_tokens": {
+          "ci95_high": 4768.2,
+          "ci95_low": 4231.525,
+          "mean": 4502.725,
+          "median": 4298.0,
+          "n": 40,
+          "stddev": 894.0525421231814
+        },
+        "latency_ms": {
+          "ci95_high": 28.43572671263246,
+          "ci95_low": 11.07159232487902,
+          "mean": 18.85299769055564,
+          "median": 6.25449902145192,
+          "n": 40,
+          "stddev": 28.339092415735898
+        },
+        "lifecycle_tokens": {
+          "ci95_high": 5128.7,
+          "ci95_low": 4524.65,
+          "mean": 4819.525,
+          "median": 4564.5,
+          "n": 40,
+          "stddev": 973.9637487988755
+        },
+        "memory_construction_tokens": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "memory_source_tokens": {
+          "ci95_high": 182.975,
+          "ci95_low": 163.25,
+          "mean": 173.375,
+          "median": 189.0,
+          "n": 40,
+          "stddev": 32.27262672757574
+        },
+        "memory_storage_growth": {
+          "ci95_high": 10.725,
+          "ci95_low": 9.825,
+          "mean": 10.275,
+          "median": 10.5,
+          "n": 40,
+          "stddev": 1.467380362484495
+        },
+        "memory_tool_calls": {
+          "ci95_high": 5.0,
+          "ci95_low": 4.05,
+          "mean": 4.5,
+          "median": 4.0,
+          "n": 40,
+          "stddev": 1.5191090506254998
+        },
+        "model_calls": {
+          "ci95_high": 11.2,
+          "ci95_low": 9.875,
+          "mean": 10.5,
+          "median": 9.5,
+          "n": 40,
+          "stddev": 2.087815690853567
+        },
+        "output_tokens": {
+          "ci95_high": 344.975,
+          "ci95_low": 292.275,
+          "mean": 316.8,
+          "median": 284.0,
+          "n": 40,
+          "stddev": 87.04499278666619
+        },
+        "provider_retry_count": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "read_context_tokens": {
+          "ci95_high": 2091.0,
+          "ci95_low": 1932.525,
+          "mean": 2011.05,
+          "median": 2009.0,
+          "n": 40,
+          "stddev": 254.97249223175388
+        },
+        "reasoning_tokens": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "retrieved_context_tokens": {
+          "ci95_high": 2091.0,
+          "ci95_low": 1932.525,
+          "mean": 2011.05,
+          "median": 2009.0,
+          "n": 40,
+          "stddev": 254.97249223175388
+        },
+        "wall_seconds": {
+          "ci95_high": 0.13521292805671692,
+          "ci95_low": 0.07813045382499695,
+          "mean": 0.10421644449234009,
+          "median": 0.06846106052398682,
+          "n": 40,
+          "stddev": 0.0948657698630031
+        }
+      },
+      "metrics": {
+        "appropriate_retrieval_rate": {
+          "ci95_high": 1.0,
+          "ci95_low": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "appropriate_write_rate": {
+          "ci95_high": 0.4916666666666666,
+          "ci95_low": 0.3875,
+          "mean": 0.4375,
+          "median": 0.41666666666666663,
+          "n": 40,
+          "stddev": 0.16206247256612188
+        },
+        "belief_update_accuracy": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 10,
+          "stddev": 0.0
+        },
+        "context_compression_ratio": {
+          "ci95_high": 0.09363371860981996,
+          "ci95_low": 0.08116482567277403,
+          "mean": 0.08747197703613879,
+          "median": 0.08289274122187185,
+          "n": 40,
+          "stddev": 0.0206024877700372
+        },
+        "continuity_accuracy": {
+          "ci95_high": 0.31666666666666665,
+          "ci95_low": 0.21666666666666665,
+          "mean": 0.26666666666666666,
+          "median": 0.3333333333333333,
+          "n": 10,
+          "stddev": 0.08606629658238704
+        },
+        "contradiction_handling": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 10,
+          "stddev": 0.0
+        },
+        "correct_primitive_selection": {
+          "ci95_high": 0.4916666666666666,
+          "ci95_low": 0.3875,
+          "mean": 0.4375,
+          "median": 0.41666666666666663,
+          "n": 40,
+          "stddev": 0.16206247256612188
+        },
+        "harmful_write_rate": {
+          "ci95_high": 0.2425,
+          "ci95_low": 0.1125,
+          "mean": 0.175,
+          "median": 0.1,
+          "n": 40,
+          "stddev": 0.20724072463856602
+        },
+        "long_horizon_recovery": {
+          "ci95_high": 0.07,
+          "ci95_low": 0.0,
+          "mean": 0.027500000000000004,
+          "median": 0.0,
+          "n": 20,
+          "stddev": 0.08503095411610255
+        },
+        "memory_contamination": {
+          "ci95_high": 0.06388888888888888,
+          "ci95_low": 0.03263888888888889,
+          "mean": 0.04861111111111111,
+          "median": 0.041666666666666664,
+          "n": 40,
+          "stddev": 0.05022503963052632
+        },
+        "memory_precision": {
+          "ci95_high": 0.5170634920634921,
+          "ci95_low": 0.488095238095238,
+          "mean": 0.5025793650793651,
+          "median": 0.5,
+          "n": 40,
+          "stddev": 0.04660386813447064
+        },
+        "memory_recall": {
+          "ci95_high": 1.0,
+          "ci95_low": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "missed_retrieval_rate": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "missed_write_rate": {
+          "ci95_high": 0.6104166666666667,
+          "ci95_low": 0.5125,
+          "mean": 0.5625,
+          "median": 0.5833333333333334,
+          "n": 40,
+          "stddev": 0.1620624725661219
+        },
+        "provenance_completeness": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 20,
+          "stddev": 0.0
+        },
+        "redundant_write_rate": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "retrieval_precision": {
+          "ci95_high": 0.8554013739883306,
+          "ci95_low": 0.7582796913231695,
+          "mean": 0.8073461321287407,
+          "median": 0.8571428571428571,
+          "n": 40,
+          "stddev": 0.15868277436468375
+        },
+        "retrieval_recall": {
+          "ci95_high": 1.0,
+          "ci95_low": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "retrieved_useful_context_tokens": {
+          "ci95_high": 539.3,
+          "ci95_low": 459.95,
+          "mean": 497.6,
+          "median": 494.0,
+          "n": 40,
+          "stddev": 129.9034750132298
+        },
+        "stale_belief_rate": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "structural_quality": {
+          "ci95_high": 0.4708333333333333,
+          "ci95_low": 0.33958333333333335,
+          "mean": 0.4,
+          "median": 0.29166666666666663,
+          "n": 40,
+          "stddev": 0.21031112483834333
+        },
+        "supersession_correctness": {
+          "ci95_high": 0.7,
+          "ci95_low": 0.25,
+          "mean": 0.5,
+          "median": 0.5,
+          "n": 20,
+          "stddev": 0.5129891760425771
+        },
+        "task_success": {
+          "ci95_high": 0.12250000000000001,
+          "ci95_low": 0.042916666666666665,
+          "mean": 0.08041666666666666,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.13122735864948154
+        },
+        "task_success_per_1k_read_tokens": {
+          "ci95_high": 0.05829047260738453,
+          "ci95_low": 0.01947554934083906,
+          "mean": 0.03809540238266912,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.062203608935447526
+        },
+        "tokens_per_success": {
+          "ci95_high": 23908.0,
+          "ci95_low": 16180.25,
+          "mean": 19820.916666666668,
+          "median": 15524.0,
+          "n": 12,
+          "stddev": 6887.236725980672
+        },
+        "unnecessary_retrieval_rate": {
+          "ci95_high": 1.0,
+          "ci95_low": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "n": 40,
+          "stddev": 0.0
+        }
+      },
+      "n": 40
+    },
+    "mindgraph-passive": {
+      "composite": {
+        "ci95_high": 0.31448967698967695,
+        "ci95_low": 0.24590451215451212,
+        "mean": 0.27965326340326335,
+        "median": 0.23376623376623373,
+        "n": 40,
+        "stddev": 0.11189870793507078
+      },
+      "efficiency": {
+        "agent_total_tokens": {
+          "ci95_high": 1289.975,
+          "ci95_low": 1151.475,
+          "mean": 1220.35,
+          "median": 1238.0,
+          "n": 40,
+          "stddev": 215.7488509046263
+        },
+        "embedding_calls": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "embedding_input_items": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "embedding_input_tokens": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "embedding_latency_ms": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "estimated_embedding_cost_usd": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "estimated_inference_cost_usd": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "evaluation_checkpoints": {
+          "ci95_high": 2.0,
+          "ci95_low": 2.0,
+          "mean": 2.0,
+          "median": 2.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "historical_context_tokens": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "input_tokens": {
+          "ci95_high": 1171.05,
+          "ci95_low": 1066.175,
+          "mean": 1120.05,
+          "median": 1107.5,
+          "n": 40,
+          "stddev": 173.1276318877981
+        },
+        "latency_ms": {
+          "ci95_high": 7.064797649218235,
+          "ci95_low": 1.4485220104688779,
+          "mean": 3.689403017051518,
+          "median": 1.2217080511618406,
+          "n": 40,
+          "stddev": 9.82059443931899
+        },
+        "lifecycle_tokens": {
+          "ci95_high": 1289.975,
+          "ci95_low": 1151.475,
+          "mean": 1220.35,
+          "median": 1238.0,
+          "n": 40,
+          "stddev": 215.7488509046263
+        },
+        "memory_construction_tokens": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "memory_source_tokens": {
+          "ci95_high": 193.95,
+          "ci95_low": 169.1,
+          "mean": 181.925,
+          "median": 189.0,
+          "n": 40,
+          "stddev": 41.11359342240184
+        },
+        "memory_storage_growth": {
+          "ci95_high": 7.225,
+          "ci95_low": 6.8,
+          "mean": 7.025,
+          "median": 7.0,
+          "n": 40,
+          "stddev": 0.7333624702836332
+        },
+        "memory_tool_calls": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "model_calls": {
+          "ci95_high": 6.225,
+          "ci95_low": 5.775,
+          "mean": 6.0,
+          "median": 6.0,
+          "n": 40,
+          "stddev": 0.7161148740394329
+        },
+        "output_tokens": {
+          "ci95_high": 113.875,
+          "ci95_low": 86.175,
+          "mean": 100.3,
+          "median": 109.0,
+          "n": 40,
+          "stddev": 45.96442325460209
+        },
+        "provider_retry_count": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "read_context_tokens": {
+          "ci95_high": 633.15,
+          "ci95_low": 563.875,
+          "mean": 599.225,
+          "median": 613.0,
+          "n": 40,
+          "stddev": 114.24164391817988
+        },
+        "reasoning_tokens": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "retrieved_context_tokens": {
+          "ci95_high": 633.15,
+          "ci95_low": 563.875,
+          "mean": 599.225,
+          "median": 613.0,
+          "n": 40,
+          "stddev": 114.24164391817988
+        },
+        "wall_seconds": {
+          "ci95_high": 0.05096074342727661,
+          "ci95_low": 0.02683225870132446,
+          "mean": 0.037078475952148436,
+          "median": 0.02157127857208252,
+          "n": 40,
+          "stddev": 0.03969707711755391
+        }
+      },
+      "metrics": {
+        "appropriate_retrieval_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "appropriate_write_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "belief_update_accuracy": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 10,
+          "stddev": 0.0
+        },
+        "context_compression_ratio": {
+          "ci95_high": 0.3095548293283178,
+          "ci95_low": 0.2944710939463455,
+          "mean": 0.3018052985326457,
+          "median": 0.3089808900029649,
+          "n": 40,
+          "stddev": 0.0251584491393867
+        },
+        "continuity_accuracy": {
+          "ci95_high": 0.3333333333333333,
+          "ci95_low": 0.3333333333333333,
+          "mean": 0.3333333333333333,
+          "median": 0.3333333333333333,
+          "n": 10,
+          "stddev": 0.0
+        },
+        "contradiction_handling": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 10,
+          "stddev": 0.0
+        },
+        "correct_primitive_selection": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "harmful_write_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "long_horizon_recovery": {
+          "ci95_high": 0.07,
+          "ci95_low": 0.0,
+          "mean": 0.027500000000000004,
+          "median": 0.0,
+          "n": 20,
+          "stddev": 0.08503095411610255
+        },
+        "memory_contamination": {
+          "ci95_high": 0.05714285714285714,
+          "ci95_low": 0.017857142857142856,
+          "mean": 0.03571428571428571,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.06264700137907352
+        },
+        "memory_precision": {
+          "ci95_high": 0.6385714285714286,
+          "ci95_low": 0.5957142857142858,
+          "mean": 0.6160714285714286,
+          "median": 0.5857142857142856,
+          "n": 40,
+          "stddev": 0.07140567398562742
+        },
+        "memory_recall": {
+          "ci95_high": 0.9333333333333333,
+          "ci95_low": 0.8666666666666666,
+          "mean": 0.9,
+          "median": 1.0,
+          "n": 40,
+          "stddev": 0.11036071393157612
+        },
+        "missed_retrieval_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "missed_write_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "provenance_completeness": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 20,
+          "stddev": 0.0
+        },
+        "redundant_write_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "retrieval_precision": {
+          "ci95_high": 0.8327380952380953,
+          "ci95_low": 0.7505952380952381,
+          "mean": 0.7916666666666667,
+          "median": 0.7142857142857143,
+          "n": 40,
+          "stddev": 0.13015910241466766
+        },
+        "retrieval_recall": {
+          "ci95_high": 1.0,
+          "ci95_low": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "retrieved_useful_context_tokens": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "stale_belief_rate": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "structural_quality": {
+          "ci95_high": 0.5020833333333333,
+          "ci95_low": 0.36875,
+          "mean": 0.4333333333333333,
+          "median": 0.29166666666666663,
+          "n": 40,
+          "stddev": 0.22739701341354884
+        },
+        "supersession_correctness": {
+          "ci95_high": 0.7,
+          "ci95_low": 0.25,
+          "mean": 0.5,
+          "median": 0.5,
+          "n": 20,
+          "stddev": 0.5129891760425771
+        },
+        "task_success": {
+          "ci95_high": 0.145,
+          "ci95_low": 0.05,
+          "mean": 0.09708333333333333,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.15077612599791843
+        },
+        "task_success_per_1k_read_tokens": {
+          "ci95_high": 0.256260753783066,
+          "ci95_low": 0.09556349862593491,
+          "mean": 0.17067508960052782,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.26983443267674306
+        },
+        "tokens_per_success": {
+          "ci95_high": 4173.61111111111,
+          "ci95_low": 3427.5,
+          "mean": 3760.055555555555,
+          "median": 3381.0,
+          "n": 12,
+          "stddev": 697.7435758522593
+        },
+        "unnecessary_retrieval_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        }
+      },
+      "n": 40
+    },
+    "stateless": {
+      "composite": {
+        "ci95_high": 0.01875,
+        "ci95_low": 0.0,
+        "mean": 0.00625,
+        "median": 0.0,
+        "n": 40,
+        "stddev": 0.03952847075210474
+      },
+      "efficiency": {
+        "agent_total_tokens": {
+          "ci95_high": 613.775,
+          "ci95_low": 559.325,
+          "mean": 586.325,
+          "median": 581.5,
+          "n": 40,
+          "stddev": 90.09635511566606
+        },
+        "embedding_calls": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "embedding_input_items": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "embedding_input_tokens": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "embedding_latency_ms": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "estimated_embedding_cost_usd": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "estimated_inference_cost_usd": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "evaluation_checkpoints": {
+          "ci95_high": 2.0,
+          "ci95_low": 2.0,
+          "mean": 2.0,
+          "median": 2.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "historical_context_tokens": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "input_tokens": {
+          "ci95_high": 521.5,
+          "ci95_low": 484.75,
+          "mean": 502.825,
+          "median": 495.0,
+          "n": 40,
+          "stddev": 62.459787063357815
+        },
+        "latency_ms": {
+          "ci95_high": 11.23100094991969,
+          "ci95_low": 1.0312392696505412,
+          "mean": 4.906750997179188,
+          "median": 0.7261045684572309,
+          "n": 40,
+          "stddev": 17.826635454083895
+        },
+        "lifecycle_tokens": {
+          "ci95_high": 613.775,
+          "ci95_low": 559.325,
+          "mean": 586.325,
+          "median": 581.5,
+          "n": 40,
+          "stddev": 90.09635511566606
+        },
+        "memory_construction_tokens": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "memory_source_tokens": {
+          "ci95_high": 173.85,
+          "ci95_low": 156.85,
+          "mean": 165.475,
+          "median": 171.0,
+          "n": 40,
+          "stddev": 28.08867597357907
+        },
+        "memory_storage_growth": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "memory_tool_calls": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "model_calls": {
+          "ci95_high": 6.225,
+          "ci95_low": 5.775,
+          "mean": 6.0,
+          "median": 6.0,
+          "n": 40,
+          "stddev": 0.7161148740394329
+        },
+        "output_tokens": {
+          "ci95_high": 92.825,
+          "ci95_low": 73.475,
+          "mean": 83.5,
+          "median": 91.0,
+          "n": 40,
+          "stddev": 31.333606109014514
+        },
+        "provider_retry_count": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "read_context_tokens": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "reasoning_tokens": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "retrieved_context_tokens": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "wall_seconds": {
+          "ci95_high": 0.022261399030685424,
+          "ci95_low": 0.009443753957748413,
+          "mean": 0.014845234155654908,
+          "median": 0.008706927299499512,
+          "n": 40,
+          "stddev": 0.020723199298075083
+        }
+      },
+      "metrics": {
+        "appropriate_retrieval_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "appropriate_write_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "belief_update_accuracy": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 10,
+          "stddev": 0.0
+        },
+        "context_compression_ratio": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "continuity_accuracy": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 10,
+          "stddev": 0.0
+        },
+        "contradiction_handling": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 10,
+          "stddev": 0.0
+        },
+        "correct_primitive_selection": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "harmful_write_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "long_horizon_recovery": {
+          "ci95_high": 0.0375,
+          "ci95_low": 0.0,
+          "mean": 0.0125,
+          "median": 0.0,
+          "n": 20,
+          "stddev": 0.05590169943749474
+        },
+        "memory_contamination": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "memory_precision": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "memory_recall": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "missed_retrieval_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "missed_write_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "provenance_completeness": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "redundant_write_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "retrieval_precision": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "retrieval_recall": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "retrieved_useful_context_tokens": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "stale_belief_rate": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "structural_quality": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "supersession_correctness": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "task_success": {
+          "ci95_high": 0.01875,
+          "ci95_low": 0.0,
+          "mean": 0.00625,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.03952847075210474
+        },
+        "task_success_per_1k_read_tokens": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "tokens_per_success": {
+          "ci95_high": 2324.0,
+          "ci95_low": 2324.0,
+          "mean": 2324.0,
+          "median": 2324.0,
+          "n": 1,
+          "stddev": 0.0
+        },
+        "unnecessary_retrieval_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        }
+      },
+      "n": 40
+    },
+    "transcript": {
+      "composite": {
+        "ci95_high": 0.15666666666666668,
+        "ci95_low": 0.05583333333333333,
+        "mean": 0.10333333333333332,
+        "median": 0.0,
+        "n": 40,
+        "stddev": 0.16203829873338665
+      },
+      "efficiency": {
+        "agent_total_tokens": {
+          "ci95_high": 1170.25,
+          "ci95_low": 1029.425,
+          "mean": 1100.525,
+          "median": 1108.5,
+          "n": 40,
+          "stddev": 233.2515960315857
+        },
+        "embedding_calls": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "embedding_input_items": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "embedding_input_tokens": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "embedding_latency_ms": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "estimated_embedding_cost_usd": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "estimated_inference_cost_usd": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "evaluation_checkpoints": {
+          "ci95_high": 2.0,
+          "ci95_low": 2.0,
+          "mean": 2.0,
+          "median": 2.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "historical_context_tokens": {
+          "ci95_high": 517.95,
+          "ci95_low": 439.3,
+          "mean": 479.3,
+          "median": 490.0,
+          "n": 40,
+          "stddev": 129.2975499004386
+        },
+        "input_tokens": {
+          "ci95_high": 1056.45,
+          "ci95_low": 941.25,
+          "mean": 1000.125,
+          "median": 993.0,
+          "n": 40,
+          "stddev": 189.81153777311556
+        },
+        "latency_ms": {
+          "ci95_high": 2.29569680232089,
+          "ci95_low": 1.141308965452481,
+          "mean": 1.6567623490118422,
+          "median": 0.8891879697330296,
+          "n": 40,
+          "stddev": 1.9398416047630114
+        },
+        "lifecycle_tokens": {
+          "ci95_high": 1170.25,
+          "ci95_low": 1029.425,
+          "mean": 1100.525,
+          "median": 1108.5,
+          "n": 40,
+          "stddev": 233.2515960315857
+        },
+        "memory_construction_tokens": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "memory_source_tokens": {
+          "ci95_high": 194.875,
+          "ci95_low": 168.95,
+          "mean": 181.975,
+          "median": 189.0,
+          "n": 40,
+          "stddev": 41.14108776593179
+        },
+        "memory_storage_growth": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "memory_tool_calls": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "model_calls": {
+          "ci95_high": 6.225,
+          "ci95_low": 5.775,
+          "mean": 6.0,
+          "median": 6.0,
+          "n": 40,
+          "stddev": 0.7161148740394329
+        },
+        "output_tokens": {
+          "ci95_high": 114.6,
+          "ci95_low": 85.875,
+          "mean": 100.4,
+          "median": 109.0,
+          "n": 40,
+          "stddev": 46.04390324072261
+        },
+        "provider_retry_count": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "read_context_tokens": {
+          "ci95_high": 517.95,
+          "ci95_low": 439.3,
+          "mean": 479.3,
+          "median": 490.0,
+          "n": 40,
+          "stddev": 129.2975499004386
+        },
+        "reasoning_tokens": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "retrieved_context_tokens": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "wall_seconds": {
+          "ci95_high": 0.04299850463867187,
+          "ci95_low": 0.01546417474746704,
+          "mean": 0.027888816595077515,
+          "median": 0.010848045349121094,
+          "n": 40,
+          "stddev": 0.04728407509423533
+        }
+      },
+      "metrics": {
+        "appropriate_retrieval_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "appropriate_write_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "belief_update_accuracy": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 10,
+          "stddev": 0.0
+        },
+        "context_compression_ratio": {
+          "ci95_high": 0.3907963304383131,
+          "ci95_low": 0.3785932844096501,
+          "mean": 0.3846450034105819,
+          "median": 0.3835920177383592,
+          "n": 40,
+          "stddev": 0.019614470447215343
+        },
+        "continuity_accuracy": {
+          "ci95_high": 0.3333333333333333,
+          "ci95_low": 0.3333333333333333,
+          "mean": 0.3333333333333333,
+          "median": 0.3333333333333333,
+          "n": 10,
+          "stddev": 0.0
+        },
+        "contradiction_handling": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 10,
+          "stddev": 0.0
+        },
+        "correct_primitive_selection": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "harmful_write_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "long_horizon_recovery": {
+          "ci95_high": 0.1,
+          "ci95_low": 0.0,
+          "mean": 0.04,
+          "median": 0.0,
+          "n": 20,
+          "stddev": 0.12732056517228266
+        },
+        "memory_contamination": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "memory_precision": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "memory_recall": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "missed_retrieval_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "missed_write_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "provenance_completeness": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "redundant_write_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "retrieval_precision": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "retrieval_recall": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "retrieved_useful_context_tokens": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "stale_belief_rate": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.0
+        },
+        "structural_quality": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "supersession_correctness": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        },
+        "task_success": {
+          "ci95_high": 0.15666666666666668,
+          "ci95_low": 0.05583333333333333,
+          "mean": 0.10333333333333332,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.16203829873338665
+        },
+        "task_success_per_1k_read_tokens": {
+          "ci95_high": 0.33326198808725344,
+          "ci95_low": 0.11498329322558627,
+          "mean": 0.2184401617917496,
+          "median": 0.0,
+          "n": 40,
+          "stddev": 0.34287106776804344
+        },
+        "tokens_per_success": {
+          "ci95_high": 3590.6666666666665,
+          "ci95_low": 2971.0,
+          "mean": 3237.472222222222,
+          "median": 3157.5,
+          "n": 12,
+          "stddev": 561.3866572659425
+        },
+        "unnecessary_retrieval_rate": {
+          "ci95_high": null,
+          "ci95_low": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "stddev": null
+        }
+      },
+      "n": 40
+    }
+  },
+  "failures": [
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"unknown\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": false,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": false,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "preference-v2-420042-09",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"Friday releases\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "preference-v2-420042-09",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"Friday releases\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "preference-v2-420042-09",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"Friday releases\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "preference-v2-420042-09",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"Friday releases\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "preference-v2-420042-09",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"proprietary macros\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "preference-v2-420042-03",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"proprietary macros\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "preference-v2-420042-03",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"proprietary macros\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "preference-v2-420042-03",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"unknown\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": false,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "preference-v2-420042-03",
+      "score": 0.16666666666666666
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"unknown\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": false,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": false,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "preference-v2-420042-03",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "belief-v2-420042-00",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "belief-v2-420042-00",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "belief-v2-420042-00",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "belief-v2-420042-00",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "belief-v2-420042-00",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "failure-v2-420042-06",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "failure-v2-420042-06",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "failure-v2-420042-06",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "failure-v2-420042-06",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "failure-v2-420042-06",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "project-v2-420042-05",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "project-v2-420042-05",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "project-v2-420042-05",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "project-v2-420042-05",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "project-v2-420042-05",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "project-v2-420042-04",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "project-v2-420042-04",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "project-v2-420042-04",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "project-v2-420042-04",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "project-v2-420042-04",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"delimited text only\"}",
+      "checks": {
+        "reuse": {
+          "control_method": true,
+          "failure_cause": false,
+          "scope": true,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": true,
+          "failure_cause": false,
+          "scope": true,
+          "similar_method": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "failure-v2-420042-00",
+      "score": 0.5
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": true,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": true,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "failure-v2-420042-00",
+      "score": 0.25
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": true,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": true,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "failure-v2-420042-00",
+      "score": 0.25
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": true,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": true,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "failure-v2-420042-00",
+      "score": 0.25
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": true,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": true,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "failure-v2-420042-00",
+      "score": 0.25
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "belief-v2-420042-01",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "belief-v2-420042-01",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "belief-v2-420042-01",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "belief-v2-420042-01",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "belief-v2-420042-01",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"shared bathrooms\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "preference-v2-420042-04",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"unknown\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": false,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "preference-v2-420042-04",
+      "score": 0.16666666666666666
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"unknown\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": false,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": false,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "preference-v2-420042-04",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"shared bathrooms\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "preference-v2-420042-04",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"shared bathrooms\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "preference-v2-420042-04",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "failure-v2-420042-02",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "failure-v2-420042-02",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "failure-v2-420042-02",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "failure-v2-420042-02",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "failure-v2-420042-02",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "project-v2-420042-01",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "project-v2-420042-01",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "project-v2-420042-01",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "project-v2-420042-01",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "project-v2-420042-01",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "project-v2-420042-08",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "project-v2-420042-08",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "project-v2-420042-08",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "project-v2-420042-08",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "project-v2-420042-08",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "project-v2-420042-03",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "project-v2-420042-03",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "project-v2-420042-03",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "project-v2-420042-03",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "project-v2-420042-03",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "belief-v2-420042-08",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "belief-v2-420042-08",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "belief-v2-420042-08",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "belief-v2-420042-08",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "belief-v2-420042-08",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "belief-v2-420042-02",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "belief-v2-420042-02",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "belief-v2-420042-02",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "belief-v2-420042-02",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "belief-v2-420042-02",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "failure-v2-420042-04",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "failure-v2-420042-04",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "failure-v2-420042-04",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "failure-v2-420042-04",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "failure-v2-420042-04",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "failure-v2-420042-05",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "failure-v2-420042-05",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "failure-v2-420042-05",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "failure-v2-420042-05",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "failure-v2-420042-05",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "project-v2-420042-06",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "project-v2-420042-06",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "project-v2-420042-06",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "project-v2-420042-06",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "project-v2-420042-06",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "belief-v2-420042-03",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "belief-v2-420042-03",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "belief-v2-420042-03",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "belief-v2-420042-03",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "belief-v2-420042-03",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "project-v2-420042-02",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "project-v2-420042-02",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "project-v2-420042-02",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "project-v2-420042-02",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "project-v2-420042-02",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "project-v2-420042-00",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"design mapping\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"streaming parsing\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": true,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": true,
+          "decision": true,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "project-v2-420042-00",
+      "score": 0.30000000000000004
+    },
+    {
+      "answer": "{\"completed\": \"design mapping\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"streaming parsing\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": true,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": true,
+          "decision": true,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "project-v2-420042-00",
+      "score": 0.30000000000000004
+    },
+    {
+      "answer": "{\"completed\": \"design mapping\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"streaming parsing\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": true,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": true,
+          "decision": true,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "project-v2-420042-00",
+      "score": 0.30000000000000004
+    },
+    {
+      "answer": "{\"completed\": \"design mapping\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"streaming parsing\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": true,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": true,
+          "decision": true,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "project-v2-420042-00",
+      "score": 0.30000000000000004
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "failure-v2-420042-01",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "failure-v2-420042-01",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "failure-v2-420042-01",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "failure-v2-420042-01",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "failure-v2-420042-01",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "failure-v2-420042-07",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "failure-v2-420042-07",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "failure-v2-420042-07",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "failure-v2-420042-07",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "failure-v2-420042-07",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "project-v2-420042-09",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "project-v2-420042-09",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "project-v2-420042-09",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "project-v2-420042-09",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "project-v2-420042-09",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "belief-v2-420042-09",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "belief-v2-420042-09",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "belief-v2-420042-09",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "belief-v2-420042-09",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "belief-v2-420042-09",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "belief-v2-420042-06",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "belief-v2-420042-06",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "belief-v2-420042-06",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "belief-v2-420042-06",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "belief-v2-420042-06",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "failure-v2-420042-09",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "failure-v2-420042-09",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "failure-v2-420042-09",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "failure-v2-420042-09",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "failure-v2-420042-09",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "failure-v2-420042-03",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "failure-v2-420042-03",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "failure-v2-420042-03",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "failure-v2-420042-03",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "failure-v2-420042-03",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"before 9 AM\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "preference-v2-420042-02",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"unknown\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": false,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "preference-v2-420042-02",
+      "score": 0.16666666666666666
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"unknown\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": false,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": false,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "preference-v2-420042-02",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"before 9 AM\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "preference-v2-420042-02",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"before 9 AM\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "preference-v2-420042-02",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"unsealed roads\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "preference-v2-420042-00",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"unknown\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": false,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": false,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "preference-v2-420042-00",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"unsealed roads\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "preference-v2-420042-00",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"unsealed roads\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "preference-v2-420042-00",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"unsealed roads\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "preference-v2-420042-00",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "failure-v2-420042-08",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "failure-v2-420042-08",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "failure-v2-420042-08",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "failure-v2-420042-08",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"similar_method\": \"unknown\", \"control_method\": \"fixed-width binary decoder\", \"failure_cause\": \"unknown\", \"scope\": \"unknown\"}",
+      "checks": {
+        "reuse": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        },
+        "transfer": {
+          "control_method": false,
+          "failure_cause": false,
+          "scope": false,
+          "similar_method": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "failure-v2-420042-08",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "project-v2-420042-07",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "project-v2-420042-07",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "project-v2-420042-07",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "project-v2-420042-07",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"completed\": \"unknown\", \"failed\": \"unknown\", \"next_action\": \"unknown\", \"decision\": \"unknown\", \"avoid_repeat\": \"unknown\"}",
+      "checks": {
+        "after_update": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        },
+        "resume": {
+          "avoid_repeat": false,
+          "completed": false,
+          "decision": false,
+          "failed": false,
+          "next_action": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "project-v2-420042-07",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"peanuts\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "preference-v2-420042-05",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"peanuts\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "preference-v2-420042-05",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"peanuts\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "preference-v2-420042-05",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"unknown\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": false,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": false,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "preference-v2-420042-05",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"peanuts\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "preference-v2-420042-05",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"style-only blocking\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "preference-v2-420042-06",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"style-only blocking\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "preference-v2-420042-06",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"unknown\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": false,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": false,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "preference-v2-420042-06",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"style-only blocking\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "preference-v2-420042-06",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"style-only blocking\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "preference-v2-420042-06",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"unversioned examples\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "preference-v2-420042-08",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"unknown\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": false,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": false,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "preference-v2-420042-08",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"unversioned examples\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "preference-v2-420042-08",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"unversioned examples\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "preference-v2-420042-08",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"unversioned examples\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "preference-v2-420042-08",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "belief-v2-420042-04",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "belief-v2-420042-04",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "belief-v2-420042-04",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "belief-v2-420042-04",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "belief-v2-420042-04",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "belief-v2-420042-05",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "belief-v2-420042-05",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "belief-v2-420042-05",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "belief-v2-420042-05",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "belief-v2-420042-05",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "belief-v2-420042-07",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "belief-v2-420042-07",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "belief-v2-420042-07",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "belief-v2-420042-07",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"acknowledged\": true}",
+      "checks": {
+        "audit": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        },
+        "belief": {
+          "evidence": false,
+          "old_claim_status": false,
+          "scope": false,
+          "unknown_scope_status": false,
+          "value": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "belief-v2-420042-07",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"weekend messages\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "preference-v2-420042-01",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"unknown\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": false,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "preference-v2-420042-01",
+      "score": 0.16666666666666666
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"unknown\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": false,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": false,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "preference-v2-420042-01",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"weekend messages\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "preference-v2-420042-01",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"weekend messages\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "preference-v2-420042-01",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"lunch meetings\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "mindgraph-active-prefetch",
+      "scenario_id": "preference-v2-420042-07",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"unknown\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": false,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": false,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "stateless",
+      "scenario_id": "preference-v2-420042-07",
+      "score": 0.0
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"lunch meetings\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "transcript",
+      "scenario_id": "preference-v2-420042-07",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"lunch meetings\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "flat",
+      "scenario_id": "preference-v2-420042-07",
+      "score": 0.3333333333333333
+    },
+    {
+      "answer": "{\"choice\": \"unknown\", \"avoid\": \"lunch meetings\", \"basis\": \"available context\"}",
+      "checks": {
+        "default": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        },
+        "exception": {
+          "avoid": true,
+          "basis": false,
+          "choice": false
+        }
+      },
+      "condition": "mindgraph-passive",
+      "scenario_id": "preference-v2-420042-07",
+      "score": 0.3333333333333333
+    }
+  ],
+  "metrics": [
+    "appropriate_retrieval_rate",
+    "appropriate_write_rate",
+    "belief_update_accuracy",
+    "context_compression_ratio",
+    "continuity_accuracy",
+    "contradiction_handling",
+    "correct_primitive_selection",
+    "harmful_write_rate",
+    "long_horizon_recovery",
+    "memory_contamination",
+    "memory_precision",
+    "memory_recall",
+    "missed_retrieval_rate",
+    "missed_write_rate",
+    "provenance_completeness",
+    "redundant_write_rate",
+    "retrieval_precision",
+    "retrieval_recall",
+    "retrieved_useful_context_tokens",
+    "stale_belief_rate",
+    "structural_quality",
+    "supersession_correctness",
+    "task_success",
+    "task_success_per_1k_read_tokens",
+    "tokens_per_success",
+    "unnecessary_retrieval_rate"
+  ],
+  "paired": {
+    "flat": {
+      "paired_standardized_effect": 0.6077818171059663,
+      "task_success_delta_vs_stateless": {
+        "ci95_high": 0.10583333333333333,
+        "ci95_low": 0.08333333333333333,
+        "mean": 0.09083333333333334,
+        "median": 0.0,
+        "n": 40,
+        "stddev": 0.1494505606729867
+      },
+      "task_success_relative_vs_stateless": 14.533333333333333
+    },
+    "mindgraph-active-prefetch": {
+      "paired_standardized_effect": 0.5754894325421698,
+      "task_success_delta_vs_stateless": {
+        "ci95_high": 0.09416666666666666,
+        "ci95_low": 0.057499999999999996,
+        "mean": 0.07416666666666667,
+        "median": 0.0,
+        "n": 40,
+        "stddev": 0.12887580982858793
+      },
+      "task_success_relative_vs_stateless": 11.866666666666665
+    },
+    "mindgraph-passive": {
+      "paired_standardized_effect": 0.6077818171059663,
+      "task_success_delta_vs_stateless": {
+        "ci95_high": 0.10583333333333333,
+        "ci95_low": 0.08333333333333333,
+        "mean": 0.09083333333333334,
+        "median": 0.0,
+        "n": 40,
+        "stddev": 0.1494505606729867
+      },
+      "task_success_relative_vs_stateless": 14.533333333333333
+    },
+    "transcript": {
+      "paired_standardized_effect": 0.6438906205527103,
+      "task_success_delta_vs_stateless": {
+        "ci95_high": 0.11708333333333334,
+        "ci95_low": 0.08333333333333333,
+        "mean": 0.09708333333333333,
+        "median": 0.0,
+        "n": 40,
+        "stddev": 0.15077612599791843
+      },
+      "task_success_relative_vs_stateless": 15.533333333333331
+    }
+  },
+  "reuse": {
+    "flat": {
+      "1": {
+        "ci95_high": 0.14458333333333334,
+        "ci95_low": 0.05083333333333333,
+        "mean": 0.09458333333333332,
+        "median": 0.0,
+        "n": 40,
+        "stddev": 0.14813116444672228
+      },
+      "2": {
+        "ci95_high": 0.15,
+        "ci95_low": 0.05500000000000001,
+        "mean": 0.09958333333333333,
+        "median": 0.0,
+        "n": 40,
+        "stddev": 0.15499689823199192
+      }
+    },
+    "mindgraph-active-prefetch": {
+      "1": {
+        "ci95_high": 0.14458333333333334,
+        "ci95_low": 0.05083333333333333,
+        "mean": 0.09458333333333332,
+        "median": 0.0,
+        "n": 40,
+        "stddev": 0.14813116444672228
+      },
+      "2": {
+        "ci95_high": 0.10791666666666666,
+        "ci95_low": 0.025,
+        "mean": 0.06625,
+        "median": 0.0,
+        "n": 40,
+        "stddev": 0.13526840996715653
+      }
+    },
+    "mindgraph-passive": {
+      "1": {
+        "ci95_high": 0.14458333333333334,
+        "ci95_low": 0.05083333333333333,
+        "mean": 0.09458333333333332,
+        "median": 0.0,
+        "n": 40,
+        "stddev": 0.14813116444672228
+      },
+      "2": {
+        "ci95_high": 0.15,
+        "ci95_low": 0.05500000000000001,
+        "mean": 0.09958333333333333,
+        "median": 0.0,
+        "n": 40,
+        "stddev": 0.15499689823199192
+      }
+    },
+    "stateless": {
+      "1": {
+        "ci95_high": 0.01875,
+        "ci95_low": 0.0,
+        "mean": 0.00625,
+        "median": 0.0,
+        "n": 40,
+        "stddev": 0.03952847075210474
+      },
+      "2": {
+        "ci95_high": 0.01875,
+        "ci95_low": 0.0,
+        "mean": 0.00625,
+        "median": 0.0,
+        "n": 40,
+        "stddev": 0.03952847075210474
+      }
+    },
+    "transcript": {
+      "1": {
+        "ci95_high": 0.15083333333333332,
+        "ci95_low": 0.05500000000000001,
+        "mean": 0.10083333333333333,
+        "median": 0.0,
+        "n": 40,
+        "stddev": 0.1596805036560921
+      },
+      "2": {
+        "ci95_high": 0.1575,
+        "ci95_low": 0.05833333333333333,
+        "mean": 0.10583333333333333,
+        "median": 0.0,
+        "n": 40,
+        "stddev": 0.1658763312379354
+      }
+    }
+  }
+}

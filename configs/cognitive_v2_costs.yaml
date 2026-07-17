@@ -1,0 +1,26 @@
+schema_version: 1
+profiles:
+  lite:
+    budget_usd: 200
+    worlds: 60
+    models: 1
+    repetitions: 1
+    conditions: ["stateless", "transcript", "transcript-full", "automatic-passive", "agent-directed-active", "oracle-passive"]
+    ablation_features: 0
+    ablation_worlds_per_feature: 0
+  iteration:
+    budget_usd: 2500
+    worlds: 120
+    models: 3
+    repetitions: 1
+    conditions: ["stateless", "transcript", "transcript-full", "automatic-passive", "agent-directed-active", "oracle-passive"]
+    ablation_features: 9
+    ablation_worlds_per_feature: 15
+  publication:
+    budget_usd: 50000
+    worlds: 500
+    models: 3
+    repetitions: 2
+    conditions: ["stateless", "transcript", "transcript-full", "automatic-passive", "agent-directed-active", "oracle-passive"]
+    ablation_features: 9
+    ablation_worlds_per_feature: 50

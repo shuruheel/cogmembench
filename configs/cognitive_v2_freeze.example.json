@@ -1,0 +1,38 @@
+{
+  "protocol_id": "cognitive-v2-publication",
+  "scenario_file": "scenarios/held_out/publication-v2.jsonl",
+  "frozen_files": [
+    "configs/cognitive_v2.yaml",
+    "configs/cognitive_v2_costs.yaml",
+    "configs/adapters_v2.yaml",
+    "cogmembench/agents/cognitive_agent_v2.py",
+    "cogmembench/agents/cognitive_tools.py",
+    "cogmembench/evaluators/outcome_v2.py",
+    "cogmembench/reports/hierarchical.py",
+    "cogmembench/reports/power.py",
+    "cogmembench/runners/cognitive_v2.py"
+  ],
+  "models": ["REPLACE_WITH_SNAPSHOT_IDS"],
+  "conditions": [
+    "stateless",
+    "transcript",
+    "transcript-full",
+    "automatic-passive",
+    "agent-directed-active",
+    "oracle-passive"
+  ],
+  "primary_endpoints": {
+    "RQ2": ["trace_verified_reuse_accuracy", "trace_verified_repaired_reuse_accuracy"],
+    "RQ3": ["belief_v_k_accuracy"],
+    "RQ4": ["dependency_invalidation_f1"]
+  },
+  "exclusion_rules": [
+    "Exclude only predeclared infrastructure failures; retain attempts and retries append-only"
+  ],
+  "analysis_plan": {
+    "statistical_unit": "scenario/world",
+    "primary_contrast": "automatic-passive minus matched transcript",
+    "uncertainty": "nested hierarchical bootstrap",
+    "mixed_effects": "treatment * depth + treatment * model; random intercept family/template/world"
+  }
+}

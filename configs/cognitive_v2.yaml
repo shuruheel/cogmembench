@@ -1,0 +1,67 @@
+schema_version: 2
+profiles:
+  smoke:
+    variants_per_family: 1
+    max_agent_steps: 8
+  development:
+    variants_per_family: 5
+    max_agent_steps: 8
+  lite:
+    variants_per_family: 20
+    max_agent_steps: 8
+  calibration:
+    variants_per_family: 40
+    max_agent_steps: 8
+  publication:
+    variants_per_family: 150
+    max_agent_steps: 8
+implemented_families: ["bitemporal_belief_revision", "recursive_investigation", "decision_lineage"]
+conditions: ["stateless", "transcript", "transcript-full", "automatic-passive", "agent-directed-active", "oracle-passive"]
+schedule_version: "balanced-v2"
+scaffolds: ["canonical-v1", "minimal-v1"]
+retrieval:
+  max_items: 8
+  default_context_tokens: 1200
+  recursive_reuse_context_tokens: 100
+transcript:
+  matched_context_tokens: 1200
+  full_context_tokens: null
+  recursive_reuse_context_tokens: 100
+operating_modes:
+  matched-budget:
+    retrieval_max_items: 8
+    read_context_tokens: 1200
+    transcript_context_tokens: 1200
+    vendor_review_required: false
+  natural:
+    retrieval_max_items: adapter-specific-frozen-value
+    read_context_tokens: adapter-specific-frozen-value
+    transcript_context_tokens: separately-reported-control
+    vendor_review_required: true
+primary_metrics:
+  RQ2: ["trace_verified_reuse_accuracy", "trace_verified_repaired_reuse_accuracy", "stale_conclusion_intrusion_rate"]
+  RQ3: ["belief_v_k_accuracy", "belief_valid_time_accuracy", "belief_known_at_accuracy"]
+  RQ4: ["dependency_invalidation_f1", "unaffected_artifact_preservation_rate"]
+generator_validity:
+  min_scenarios_per_family: 5
+  min_structural_templates_per_family: 3
+  min_causal_worlds_per_family: 5
+  min_difficulty_tiers_per_family: 3
+  min_unique_causal_world_ratio: 0.8
+  max_template_share: 0.4
+  require_no_internal_id_leakage: true
+  require_no_direct_checkpoint_answers: true
+evaluator_validity:
+  mechanical_adversarial_cases: 11
+  require_matched_accept_reject_cases: true
+  human_agreement_required_for_gate_3: true
+  human_annotation_sample_size: 50
+  minimum_independent_annotators: 2
+  fleiss_kappa_threshold: 0.8
+  gold_majority_accuracy_threshold: 0.9
+ablations: ["no-provenance-links", "no-temporal-metadata", "no-evidence-claim-distinction", "no-stored-intermediate-conclusions", "no-dependency-tracking", "no-supersession", "no-active-retrieval", "no-lesson-consolidation", "no-audit-receipt"]
+analysis:
+  statistical_unit: scenario/world
+  bootstrap_iterations: 2000
+  bootstrap_seed: 1729
+  pairing_keys: ["scenario_id", "model", "repetition"]

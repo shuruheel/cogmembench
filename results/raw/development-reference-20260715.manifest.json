@@ -1,0 +1,70 @@
+{
+  "backend": "reference",
+  "base_seed": 42,
+  "completed_trials": 600,
+  "conditions": [
+    "stateless",
+    "transcript",
+    "flat",
+    "mindgraph-passive",
+    "mindgraph-active"
+  ],
+  "config_hashes": {
+    "conditions.yaml": "80f0e81f7b29f79c482a987f2510b40141f0b85deb6fc161a10112fe4eb4ee12",
+    "metrics.yaml": "452a393cc5f7bcff76acff2defc47893e46b373a7e10fd51d4345b11ada9f3a9",
+    "models.yaml": "a922152206affa26b9307a1bb0f4d055e7e2a9dde204bf12fe09dc20899e7a6a",
+    "scales.yaml": "cf8914b01a6bac801a6d16a2f6f074d691dfd41afd7a038c866633129369fdf5"
+  },
+  "environment": {
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "python": "3.13.7"
+  },
+  "finished_at": "2026-07-15T12:35:08.580543+00:00",
+  "generated_at": "2026-07-15T12:35:06.987476+00:00",
+  "isolation_test": {
+    "passed": true,
+    "stale_hits": [
+      {
+        "agent_id": "cogmembench",
+        "confidence": 0.7,
+        "label": "COGMEMBENCH_SENTINEL_BETA",
+        "primitive": "observation",
+        "provenance": [],
+        "salience": 0.5,
+        "score": 0.5753641449035617,
+        "session_id": "reset-b",
+        "superseded_by": null,
+        "text": "COGMEMBENCH_SENTINEL_BETA",
+        "uid": "ref-3845810c13d38e67",
+        "version": 1
+      }
+    ]
+  },
+  "model": "deterministic-v1",
+  "model_config": {
+    "input_cost_per_million": 0,
+    "max_output_tokens": 512,
+    "model": "deterministic-v1",
+    "output_cost_per_million": 0,
+    "provider": "deterministic",
+    "temperature": 0
+  },
+  "provider": "deterministic",
+  "repository_shas": {
+    "mindgraph-benchmarks": "3ee04e3e62a88bf4bdd9f8db898c6f276259be06",
+    "mindgraph-cloud": "a8379bf3e8e12f431d841608ab4ac09fe6a57c00",
+    "mindgraph-hermes": "b96c2590435bb625210506a47df682967215b6d7",
+    "mindgraph-mcp": "5459101091eba118f4cf42f677be452328581442",
+    "mindgraph-py": "a2299f922e3af321d7902a0538b9e997a959b019",
+    "mindgraph-rs": "1b3579ae4abc905436c0ade8b4ef9f56abada3a2",
+    "mindgraph-ts": "6553541aac2c8a98a545ab0dde0818e396b48fd7",
+    "mnestic": "7555a5a1d860ad71e9213617babee4d719abb0be",
+    "mnestic-benchmarks": "dedd0f0b3e6f7a0cddadd1efec1df8df73a2ab32"
+  },
+  "run_id": "development-reference-20260715",
+  "scale": "development",
+  "scenario_count": 120,
+  "scenario_file": "/Users/shuruheel/Code/mindgraph/cogmembench/scenarios/fixtures/development-42.jsonl",
+  "scenario_sha256": "f0c12acdf7d8c67e052f36a3b8f8ea6622b34964457476203e1f9358fcdc6f28",
+  "token_accounting": "deterministic-fallback"
+}

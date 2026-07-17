@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "protocol_reviews": [],
+  "vendor_reviews": [
+    {"system": "MindGraph", "status": "not_contacted", "sent_at": null, "deadline": null, "response_artifact": null},
+    {"system": "Mem0", "status": "not_contacted", "sent_at": null, "deadline": null, "response_artifact": null},
+    {"system": "Zep/Graphiti", "status": "not_contacted", "sent_at": null, "deadline": null, "response_artifact": null},
+    {"system": "Cognee", "status": "not_contacted", "sent_at": null, "deadline": null, "response_artifact": null}
+  ],
+  "allowed_statuses": ["not_contacted", "pending", "accepted", "changes_requested", "declined", "no_response"]
+}

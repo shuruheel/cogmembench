@@ -1,0 +1,130 @@
+{
+  "backend": "mindgraph-local",
+  "base_seed": 42,
+  "completed_trials": 28,
+  "conditions": [
+    "stateless",
+    "transcript",
+    "flat",
+    "flat-hybrid",
+    "mindgraph-passive",
+    "mindgraph-active-prefetch",
+    "mindgraph-active-pull"
+  ],
+  "config_hashes": {
+    "conditions.yaml": "2c1136e98ba170a333dfb11fe2f862079f8d2ab18bd5534bf48ee10fc7a0e459",
+    "metrics.yaml": "452a393cc5f7bcff76acff2defc47893e46b373a7e10fd51d4345b11ada9f3a9",
+    "models.yaml": "a922152206affa26b9307a1bb0f4d055e7e2a9dde204bf12fe09dc20899e7a6a",
+    "scales.yaml": "cf8914b01a6bac801a6d16a2f6f074d691dfd41afd7a038c866633129369fdf5"
+  },
+  "environment": {
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "python": "3.13.7"
+  },
+  "finished_at": "2026-07-16T15:45:19.573185+00:00",
+  "generated_at": "2026-07-16T15:21:44.030151+00:00",
+  "isolation_test": {
+    "passed": true,
+    "retrieval_diagnostic": {
+      "delayed_context_hits": [],
+      "delayed_hybrid_hits": [],
+      "explained_result_count": 1,
+      "hybrid_verified": true,
+      "retrieval_legs": [
+        "fts",
+        "vec"
+      ],
+      "stats_after_final_reset": {
+        "edges_by_type": {},
+        "embedding_count": 0,
+        "embedding_dimension": 1536,
+        "live_edges": 0,
+        "live_nodes": 0,
+        "nodes_by_layer": {},
+        "nodes_by_type": {},
+        "tombstoned_edges": 0,
+        "tombstoned_nodes": 0,
+        "total_aliases": 0,
+        "total_edges": 0,
+        "total_nodes": 0,
+        "total_versions": 0
+      },
+      "stats_before_final_reset": {
+        "edges_by_type": {},
+        "embedding_count": 2,
+        "embedding_dimension": 1536,
+        "live_edges": 0,
+        "live_nodes": 1,
+        "nodes_by_layer": {
+          "reality": 1
+        },
+        "nodes_by_type": {
+          "Observation": 1
+        },
+        "tombstoned_edges": 0,
+        "tombstoned_nodes": 0,
+        "total_aliases": 0,
+        "total_edges": 0,
+        "total_nodes": 1,
+        "total_versions": 1
+      }
+    },
+    "stale_hits": [
+      {
+        "confidence": 1.0,
+        "label": "sentinel beta",
+        "node_type": "Observation",
+        "props": {
+          "content": "",
+          "observation_type": "system_event",
+          "session_uid": null,
+          "timestamp": null
+        },
+        "summary": "COGMEMBENCH_SENTINEL_BETA",
+        "uid": "2a6b67e0-fb23-42d8-9201-d580e98bf1a2"
+      }
+    ]
+  },
+  "model": "qwen/qwen3-32b",
+  "model_config": {
+    "input_cost_per_million": 0.08,
+    "max_output_tokens": 1024,
+    "model": "qwen/qwen3-32b",
+    "output_cost_per_million": 0.28,
+    "provider": "openrouter",
+    "provider_only": "deepinfra",
+    "temperature": 0
+  },
+  "provider": "openrouter",
+  "repository_shas": {
+    "mindgraph-benchmarks": "3ee04e3e62a88bf4bdd9f8db898c6f276259be06",
+    "mindgraph-cloud": "3ca88f415e0678d6036a5d7674c784fde0ab2c34",
+    "mindgraph-hermes": "b96c2590435bb625210506a47df682967215b6d7",
+    "mindgraph-mcp": "5459101091eba118f4cf42f677be452328581442",
+    "mindgraph-py": "12ae938850625a932a17ee5a55d64c8626403f85",
+    "mindgraph-rs": "ab2351ba09bceef7182e6f2e6406777096c2f120",
+    "mindgraph-ts": "7fe5664090ab48ffd1ae9c6116e7d8c934c3fcab",
+    "mnestic": "7555a5a1d860ad71e9213617babee4d719abb0be",
+    "mnestic-benchmarks": "dedd0f0b3e6f7a0cddadd1efec1df8df73a2ab32"
+  },
+  "retrieval_configuration": {
+    "embedding_model": "text-embedding-3-small",
+    "embedding_provider": "openai",
+    "flat_bm25": "okapi-bm25",
+    "flat_hybrid_fusion": "rrf-k60",
+    "mindgraph_context_endpoint": "/retrieve/context",
+    "mindgraph_retrieval_mode": "hybrid-if-embeddings-available",
+    "top_k": 5
+  },
+  "run_id": "smoke-hybrid-qwen-20260716",
+  "scale": "smoke",
+  "scenario_count": 4,
+  "scenario_file": "/Users/shuruheel/Code/mindgraph/cogmembench/scenarios/fixtures/smoke-42.jsonl",
+  "scenario_sha256": "8029d59608374c16c02ba54c4c385fbd1aaea9d6fd4f8f1df45984ed63964ecf",
+  "server_treatment_controls": {
+    "llm_base_url": "https://openrouter.ai/api",
+    "llm_model": "qwen/qwen3-32b",
+    "wiki_autocompile": "off"
+  },
+  "token_accounting": "provider"
+}

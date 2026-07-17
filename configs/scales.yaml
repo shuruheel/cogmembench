@@ -1,0 +1,17 @@
+smoke:
+  variants_per_family: 1
+  seeds: [42]
+  max_agent_steps: 8
+  retrieval_k: 5
+development:
+  variants_per_family: 10
+  seeds: [41, 42, 43]
+  max_agent_steps: 8
+  retrieval_k: 5
+publication:
+  variants_per_family: 30
+  seeds: [101, 211, 307, 401, 503]
+  max_agent_steps: 8
+  retrieval_k: 8
+  held_out: true
+

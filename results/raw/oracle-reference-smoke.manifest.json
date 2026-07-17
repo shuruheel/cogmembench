@@ -1,0 +1,149 @@
+{
+  "backend": "reference",
+  "base_seed": 42,
+  "completed_trials": 4,
+  "conditions": [
+    "oracle-policy"
+  ],
+  "config_hashes": {
+    "conditions.yaml": "2c1136e98ba170a333dfb11fe2f862079f8d2ab18bd5534bf48ee10fc7a0e459",
+    "metrics.yaml": "452a393cc5f7bcff76acff2defc47893e46b373a7e10fd51d4345b11ada9f3a9",
+    "models.yaml": "bcf70aeb8e4faab33816dcad2a2cd872029004009b9e9abcd8aba9e776137d6c",
+    "scales.yaml": "cf8914b01a6bac801a6d16a2f6f074d691dfd41afd7a038c866633129369fdf5"
+  },
+  "environment": {
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "python": "3.13.7"
+  },
+  "finished_at": "2026-07-16T17:56:49.911971+00:00",
+  "generated_at": "2026-07-16T17:56:49.398367+00:00",
+  "isolation_test": {
+    "passed": true,
+    "retrieval_diagnostic": {},
+    "stale_hits": [
+      {
+        "agent_id": "cogmembench",
+        "confidence": 0.7,
+        "label": "COGMEMBENCH_SENTINEL_BETA",
+        "primitive": "observation",
+        "provenance": [],
+        "salience": 0.5,
+        "score": 0.5753641449035617,
+        "session_id": "reset-b",
+        "superseded_by": null,
+        "text": "COGMEMBENCH_SENTINEL_BETA",
+        "uid": "ref-3845810c13d38e67",
+        "version": 1
+      }
+    ]
+  },
+  "model": "deterministic-v1",
+  "model_config": {
+    "input_cost_per_million": 0,
+    "max_output_tokens": 512,
+    "model": "deterministic-v1",
+    "output_cost_per_million": 0,
+    "provider": "deterministic",
+    "temperature": 0
+  },
+  "protocol_lock": {
+    "frozen_at_commit": "969eaa6",
+    "lock_sha256": "95db8eb43973a950147b46c4d06b3a3f82b7acdcf4cf735dba852f13e527e963",
+    "protocol_id": "smoke-v1",
+    "verified_files": 7
+  },
+  "provider": "deterministic",
+  "repository_shas": {
+    "mindgraph-benchmarks": "3ee04e3e62a88bf4bdd9f8db898c6f276259be06",
+    "mindgraph-cloud": "3ca88f415e0678d6036a5d7674c784fde0ab2c34",
+    "mindgraph-hermes": "b96c2590435bb625210506a47df682967215b6d7",
+    "mindgraph-mcp": "5459101091eba118f4cf42f677be452328581442",
+    "mindgraph-py": "12ae938850625a932a17ee5a55d64c8626403f85",
+    "mindgraph-rs": "d1596b11d1b0ea15992545290859f9c3ecd716c4",
+    "mindgraph-ts": "7fe5664090ab48ffd1ae9c6116e7d8c934c3fcab",
+    "mnestic": "7555a5a1d860ad71e9213617babee4d719abb0be",
+    "mnestic-benchmarks": "dedd0f0b3e6f7a0cddadd1efec1df8df73a2ab32"
+  },
+  "repository_states": {
+    "mindgraph-benchmarks": {
+      "diff_sha256": null,
+      "dirty": false,
+      "sha": "3ee04e3e62a88bf4bdd9f8db898c6f276259be06",
+      "status_sha256": null
+    },
+    "mindgraph-cloud": {
+      "diff_sha256": "f37328e4c6e7925294857cee1fb50699d658bdf0eebbd109a49ce77a59591906",
+      "dirty": true,
+      "sha": "3ca88f415e0678d6036a5d7674c784fde0ab2c34",
+      "status_sha256": "5ec847ab7de4070744dd4b49124093c5755bc870601d250d323c20c0447f06da"
+    },
+    "mindgraph-hermes": {
+      "diff_sha256": null,
+      "dirty": false,
+      "sha": "b96c2590435bb625210506a47df682967215b6d7",
+      "status_sha256": null
+    },
+    "mindgraph-mcp": {
+      "diff_sha256": null,
+      "dirty": false,
+      "sha": "5459101091eba118f4cf42f677be452328581442",
+      "status_sha256": null
+    },
+    "mindgraph-py": {
+      "diff_sha256": null,
+      "dirty": false,
+      "sha": "12ae938850625a932a17ee5a55d64c8626403f85",
+      "status_sha256": null
+    },
+    "mindgraph-rs": {
+      "diff_sha256": "cf30b2ccd20543a14c5d90ecefa9d509c744e61c2064f7890c5a2b69d22cee0a",
+      "dirty": true,
+      "sha": "d1596b11d1b0ea15992545290859f9c3ecd716c4",
+      "status_sha256": "f6b04fd896fff2d5c2b739768623ac1859eb7095301c6ba1a2d254f4f59b492f"
+    },
+    "mindgraph-ts": {
+      "diff_sha256": null,
+      "dirty": false,
+      "sha": "7fe5664090ab48ffd1ae9c6116e7d8c934c3fcab",
+      "status_sha256": null
+    },
+    "mnestic": {
+      "diff_sha256": null,
+      "dirty": true,
+      "sha": "7555a5a1d860ad71e9213617babee4d719abb0be",
+      "status_sha256": "373b57f66af2147e0e5a9d8b0bd65d76de1bf909e02a475a30a4a7fb9e1c3458"
+    },
+    "mnestic-benchmarks": {
+      "diff_sha256": null,
+      "dirty": true,
+      "sha": "dedd0f0b3e6f7a0cddadd1efec1df8df73a2ab32",
+      "status_sha256": "1f68e84179a1e73497b33152cb0c023b8c4c1f2d9d936b4a94988f34a2740f27"
+    },
+    "workspace": {
+      "diff_sha256": "5a2ddf07fa7fd6afc5b8f070cbb1f557993ae198bc147a1bb25029f734acb25a",
+      "dirty": true,
+      "sha": "969eaa690a62c5d41cc0be45b1adf06f00660576",
+      "status_sha256": "7b2c1d38b607b068e93171ba26ddc4c816e8ce1d7332802e99a7ab9add37e9af"
+    }
+  },
+  "retrieval_configuration": {
+    "embedding_model": "text-embedding-3-small",
+    "embedding_provider": "openai",
+    "flat_bm25": "okapi-bm25",
+    "flat_hybrid_fusion": null,
+    "mindgraph_context_endpoint": "/retrieve/context",
+    "mindgraph_retrieval_mode": "hybrid-if-embeddings-available",
+    "top_k": 5
+  },
+  "run_id": "oracle-reference-smoke",
+  "scale": "smoke",
+  "scenario_count": 4,
+  "scenario_file": "/Users/shuruheel/Code/mindgraph/cogmembench/scenarios/fixtures/smoke-42.jsonl",
+  "scenario_sha256": "544170f96bfb84902b8786a61c993f3976e21e6c1e42caf644ce2f40e912952c",
+  "server_treatment_controls": {
+    "llm_base_url": null,
+    "llm_model": null,
+    "wiki_autocompile": null
+  },
+  "token_accounting": "deterministic-fallback"
+}

@@ -1,0 +1,65 @@
+schema_version: 2
+adapters:
+  reference:
+    evidence_mode: native
+    clock_mode: native
+    live_service_required: false
+  flat:
+    evidence_mode: mapped
+    clock_mode: native
+    live_service_required: false
+    retrieval: okapi-bm25
+    canonical_rendering: true
+  summary:
+    evidence_mode: mapped
+    clock_mode: native
+    live_service_required: false
+    retrieval: rolling-extractive-summary
+    max_context_items: 1
+  vector:
+    evidence_mode: mapped
+    clock_mode: native
+    live_service_required: false
+    retrieval: dense-vector
+    embedding_api_key_env: COGMEMBENCH_EMBEDDING_API_KEY
+    embedding_base_url_env: COGMEMBENCH_EMBEDDING_BASE_URL
+    embedding_model_env: COGMEMBENCH_EMBEDDING_MODEL
+    canonical_rendering: true
+  hybrid:
+    evidence_mode: mapped
+    clock_mode: native
+    live_service_required: false
+    retrieval: bm25-vector-rrf
+    fusion: rrf-k60
+    embedding_api_key_env: COGMEMBENCH_EMBEDDING_API_KEY
+    embedding_base_url_env: COGMEMBENCH_EMBEDDING_BASE_URL
+    embedding_model_env: COGMEMBENCH_EMBEDDING_MODEL
+    canonical_rendering: true
+  mindgraph-v2:
+    evidence_mode: mapped
+    clock_mode: mapped
+    base_url_env: MINDGRAPH_BASE_URL
+    api_key_env: MINDGRAPH_API_KEY
+    default_base_url: http://127.0.0.1:18790
+    api_surface: public-http-v2
+  mem0-oss:
+    evidence_mode: mapped
+    clock_mode: mapped
+    base_url_env: MEM0_BASE_URL
+    api_key_env: MEM0_API_KEY
+    default_base_url: http://127.0.0.1:8000
+    api_surface: oss-rest-1.x
+  zep-cloud:
+    evidence_mode: mapped
+    clock_mode: mapped
+    base_url_env: ZEP_API_URL
+    api_key_env: ZEP_API_KEY
+    default_base_url: https://api.getzep.com
+    api_surface: graph-api-v2
+  cognee:
+    evidence_mode: mapped
+    clock_mode: mapped
+    base_url_env: COGNEE_BASE_URL
+    api_key_env: COGNEE_API_KEY
+    default_base_url: http://127.0.0.1:8000
+    api_surface: rest-api-v1

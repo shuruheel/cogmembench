@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="520" viewBox="0 0 760 520">
+<rect width="100%" height="100%" fill="white"/>
+<text x="20" y="30" font-family="sans-serif" font-size="18">CogMemBench task success</text>
+<text x="20" y="77" font-family="sans-serif" font-size="13">flat</text>
+<rect x="190" y="55" width="500.0" height="28" fill="#5267a8"/>
+<text x="700.0" y="75" font-family="sans-serif" font-size="12">1.000</text>
+<text x="20" y="132" font-family="sans-serif" font-size="13">flat-hybrid</text>
+<rect x="190" y="110" width="416.7" height="28" fill="#5267a8"/>
+<text x="616.7" y="130" font-family="sans-serif" font-size="12">0.833</text>
+<text x="20" y="187" font-family="sans-serif" font-size="13">mindgraph-active-prefetch</text>
+<rect x="190" y="165" width="377.1" height="28" fill="#5267a8"/>
+<text x="577.1" y="185" font-family="sans-serif" font-size="12">0.754</text>
+<text x="20" y="242" font-family="sans-serif" font-size="13">mindgraph-active-pull</text>
+<rect x="190" y="220" width="270.8" height="28" fill="#5267a8"/>
+<text x="470.8" y="240" font-family="sans-serif" font-size="12">0.542</text>
+<text x="20" y="297" font-family="sans-serif" font-size="13">mindgraph-passive</text>
+<rect x="190" y="275" width="227.1" height="28" fill="#5267a8"/>
+<text x="427.1" y="295" font-family="sans-serif" font-size="12">0.454</text>
+<text x="20" y="352" font-family="sans-serif" font-size="13">oracle-policy</text>
+<rect x="190" y="330" width="385.4" height="28" fill="#5267a8"/>
+<text x="585.4" y="350" font-family="sans-serif" font-size="12">0.771</text>
+<text x="20" y="407" font-family="sans-serif" font-size="13">stateless</text>
+<rect x="190" y="385" width="25.0" height="28" fill="#5267a8"/>
+<text x="225.0" y="405" font-family="sans-serif" font-size="12">0.050</text>
+<text x="20" y="462" font-family="sans-serif" font-size="13">transcript</text>
+<rect x="190" y="440" width="427.1" height="28" fill="#5267a8"/>
+<text x="627.1" y="460" font-family="sans-serif" font-size="12">0.854</text>
+</svg>

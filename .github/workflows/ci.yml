@@ -1,0 +1,29 @@
+name: cogmembench-smoke
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -e ".[dev]"
+      - run: ruff check cogmembench tests
+      - run: pytest -q
+      - run: cogmembench generate --scale smoke --seed 42
+      - run: cogmembench run --scale smoke --model deterministic-v1 --backend reference
+      - run: cogmembench report --run-id latest
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cogmembench-smoke
+          path: |
+            results/raw/*.jsonl
+            results/aggregated/*.json
+            results/traces/*.jsonl
+            results/plots/*.svg

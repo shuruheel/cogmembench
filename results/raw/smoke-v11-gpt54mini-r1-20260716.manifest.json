@@ -1,0 +1,200 @@
+{
+  "backend": "mindgraph-local",
+  "base_seed": 42,
+  "completed_trials": 32,
+  "conditions": [
+    "stateless",
+    "transcript",
+    "flat",
+    "flat-hybrid",
+    "mindgraph-passive",
+    "mindgraph-active-prefetch",
+    "mindgraph-active-pull",
+    "oracle-policy"
+  ],
+  "config_hashes": {
+    "conditions.yaml": "2c1136e98ba170a333dfb11fe2f862079f8d2ab18bd5534bf48ee10fc7a0e459",
+    "metrics.yaml": "452a393cc5f7bcff76acff2defc47893e46b373a7e10fd51d4345b11ada9f3a9",
+    "models.yaml": "bcf70aeb8e4faab33816dcad2a2cd872029004009b9e9abcd8aba9e776137d6c",
+    "scales.yaml": "cf8914b01a6bac801a6d16a2f6f074d691dfd41afd7a038c866633129369fdf5"
+  },
+  "environment": {
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "python": "3.13.7"
+  },
+  "finished_at": "2026-07-16T19:40:38.029719+00:00",
+  "generated_at": "2026-07-16T19:25:21.361346+00:00",
+  "isolation_test": {
+    "passed": true,
+    "retrieval_diagnostic": {
+      "delayed_context_hits": [],
+      "delayed_hybrid_hits": [],
+      "explained_result_count": 1,
+      "hybrid_verified": true,
+      "retrieval_legs": [
+        "fts",
+        "vec"
+      ],
+      "stats_after_final_reset": {
+        "edges_by_type": {},
+        "embedding_count": 0,
+        "embedding_dimension": 1536,
+        "live_edges": 0,
+        "live_nodes": 0,
+        "nodes_by_layer": {},
+        "nodes_by_type": {},
+        "tombstoned_edges": 0,
+        "tombstoned_nodes": 0,
+        "total_aliases": 0,
+        "total_edges": 0,
+        "total_nodes": 0,
+        "total_versions": 0
+      },
+      "stats_before_final_reset": {
+        "edges_by_type": {},
+        "embedding_count": 1,
+        "embedding_dimension": 1536,
+        "live_edges": 0,
+        "live_nodes": 1,
+        "nodes_by_layer": {
+          "reality": 1
+        },
+        "nodes_by_type": {
+          "Observation": 1
+        },
+        "tombstoned_edges": 0,
+        "tombstoned_nodes": 0,
+        "total_aliases": 0,
+        "total_edges": 0,
+        "total_nodes": 1,
+        "total_versions": 1
+      }
+    },
+    "stale_hits": [
+      {
+        "confidence": 1.0,
+        "label": "sentinel beta",
+        "node_type": "Observation",
+        "props": {
+          "content": "",
+          "observation_type": "system_event",
+          "session_uid": null,
+          "timestamp": null
+        },
+        "summary": "COGMEMBENCH_SENTINEL_BETA",
+        "uid": "a6cb0635-8323-4492-9bf5-3d1b2de0f37e"
+      }
+    ]
+  },
+  "model": "openai/gpt-5.4-mini",
+  "model_config": {
+    "input_cost_per_million": 0.75,
+    "max_output_tokens": 1024,
+    "model": "openai/gpt-5.4-mini",
+    "omit_temperature": true,
+    "output_cost_per_million": 4.5,
+    "provider": "openrouter",
+    "provider_only": "openai",
+    "temperature": 0
+  },
+  "protocol_lock": {
+    "frozen_at_commit": "978e661",
+    "lock_sha256": "ef4c736acbaca534a8c1ce6d26456ad4595e065d1de0a12d1f1f8644a9edb074",
+    "protocol_id": "smoke-v1.1",
+    "verified_files": 7
+  },
+  "provider": "openrouter",
+  "repository_shas": {
+    "mindgraph-benchmarks": "3ee04e3e62a88bf4bdd9f8db898c6f276259be06",
+    "mindgraph-cloud": "362c7c95f1834e30a8ed65c78a55dbeff336f056",
+    "mindgraph-hermes": "b96c2590435bb625210506a47df682967215b6d7",
+    "mindgraph-mcp": "5459101091eba118f4cf42f677be452328581442",
+    "mindgraph-py": "12ae938850625a932a17ee5a55d64c8626403f85",
+    "mindgraph-rs": "9b92b872f87e5d796e01500577343d0140f8e95d",
+    "mindgraph-ts": "7fe5664090ab48ffd1ae9c6116e7d8c934c3fcab",
+    "mnestic": "7555a5a1d860ad71e9213617babee4d719abb0be",
+    "mnestic-benchmarks": "dedd0f0b3e6f7a0cddadd1efec1df8df73a2ab32"
+  },
+  "repository_states": {
+    "mindgraph-benchmarks": {
+      "diff_sha256": null,
+      "dirty": false,
+      "sha": "3ee04e3e62a88bf4bdd9f8db898c6f276259be06",
+      "status_sha256": null
+    },
+    "mindgraph-cloud": {
+      "diff_sha256": null,
+      "dirty": false,
+      "sha": "362c7c95f1834e30a8ed65c78a55dbeff336f056",
+      "status_sha256": null
+    },
+    "mindgraph-hermes": {
+      "diff_sha256": null,
+      "dirty": false,
+      "sha": "b96c2590435bb625210506a47df682967215b6d7",
+      "status_sha256": null
+    },
+    "mindgraph-mcp": {
+      "diff_sha256": null,
+      "dirty": false,
+      "sha": "5459101091eba118f4cf42f677be452328581442",
+      "status_sha256": null
+    },
+    "mindgraph-py": {
+      "diff_sha256": null,
+      "dirty": false,
+      "sha": "12ae938850625a932a17ee5a55d64c8626403f85",
+      "status_sha256": null
+    },
+    "mindgraph-rs": {
+      "diff_sha256": "f91e416f92dc27d540822d2a7e64e8f439b8f52f51bb460da3d1500c1ed0c26c",
+      "dirty": true,
+      "sha": "9b92b872f87e5d796e01500577343d0140f8e95d",
+      "status_sha256": "1d000362052f7bb2be185239784e364d87ef9167763517b4367cabcc88b4e347"
+    },
+    "mindgraph-ts": {
+      "diff_sha256": null,
+      "dirty": false,
+      "sha": "7fe5664090ab48ffd1ae9c6116e7d8c934c3fcab",
+      "status_sha256": null
+    },
+    "mnestic": {
+      "diff_sha256": null,
+      "dirty": true,
+      "sha": "7555a5a1d860ad71e9213617babee4d719abb0be",
+      "status_sha256": "373b57f66af2147e0e5a9d8b0bd65d76de1bf909e02a475a30a4a7fb9e1c3458"
+    },
+    "mnestic-benchmarks": {
+      "diff_sha256": null,
+      "dirty": true,
+      "sha": "dedd0f0b3e6f7a0cddadd1efec1df8df73a2ab32",
+      "status_sha256": "1f68e84179a1e73497b33152cb0c023b8c4c1f2d9d936b4a94988f34a2740f27"
+    },
+    "workspace": {
+      "diff_sha256": "855a0dcfc8d098c5618ab4978afffaebf03f0a99536630470f5c3dfc7ba886ba",
+      "dirty": true,
+      "sha": "e477d60c242641ddcdfd4a5afe4788d8ba1f3c56",
+      "status_sha256": "dea28da8a96e29edd64ccec335348e64ea1113b6ff1a73c7010fdf830333b46d"
+    }
+  },
+  "retrieval_configuration": {
+    "embedding_model": "text-embedding-3-small",
+    "embedding_provider": "openai",
+    "flat_bm25": "okapi-bm25",
+    "flat_hybrid_fusion": "rrf-k60",
+    "mindgraph_context_endpoint": "/retrieve/context",
+    "mindgraph_retrieval_mode": "hybrid-if-embeddings-available",
+    "top_k": 5
+  },
+  "run_id": "smoke-v11-gpt54mini-r1-20260716",
+  "scale": "smoke",
+  "scenario_count": 4,
+  "scenario_file": "scenarios/fixtures/smoke-42-v1.1.jsonl",
+  "scenario_sha256": "d292ba4a56a5d2762ed25e9c8007be3776d0c23439f498ce7939166b7d1f5383",
+  "server_treatment_controls": {
+    "llm_base_url": "https://openrouter.ai/api",
+    "llm_model": "qwen/qwen3-32b",
+    "wiki_autocompile": "off"
+  },
+  "token_accounting": "provider"
+}

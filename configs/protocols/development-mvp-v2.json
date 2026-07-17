@@ -1,0 +1,27 @@
+{
+  "protocol_id": "development-mvp-v2",
+  "frozen_at_commit": "0329627",
+  "supersedes": "development-mvp-v1",
+  "change_reason": "Pre-run validity audit required production MCP dispatch, decision-time snapshots, phase-separated token accounting, family-scoped evaluation, balanced scheduling, treatment-safe resume, and structurally varied two-use scenarios.",
+  "executor_version": "development-v2",
+  "evaluator_version": "development-v2",
+  "schedule_version": "balanced-v2",
+  "files": {
+    "scenarios/fixtures/development-42-mvp-v2.jsonl": "7d4f4b876e40cc09531b89bc1313a8d4332011656cec85c139b33072fe1125be",
+    "scenarios/fixtures/development-42-mvp-v2-gate4.jsonl": "933642569382ce4687faa6f45534624e2fab7243a01629b88fd5a08fe653c657",
+    "scenarios/fixtures/development-42-mvp-v2-gate8.jsonl": "911b1733dca8fd2b03a3ae605e14147b6142585a460016ad800ba4dcd346dc05",
+    "cogmembench/agents/development_v2.py": "d2b6b26b7f65c5c3162e4567bc22c45d0564be0ed2fb4eafb473e00b60d2b5cf",
+    "cogmembench/evaluators/development_v2.py": "0bebc0e2907612f6b0ae34c0d325f12e019aa1e6be9f4a167a8282813a0afb14",
+    "cogmembench/scenarios/generators/development_v2.py": "6857e86d304da7fe024a4235e3291caf1a5bb63d8f5aac1ca6489f94d63342c9",
+    "cogmembench/memory/mcp_stdio.py": "e4f94d0e4803c2f0823c95a13610f4d59f7291b70872967deaa1570467791ca3",
+    "cogmembench/runners/run.py": "25513be0c9747ddd082f11c31a3870bfb3355365622eadb50a833f0aa13a4479",
+    "cogmembench/providers/openai_compatible.py": "5449ceb39a2c73947662be94b8ba4d5de47a13cf4dbd1fbe9dc395ad688906ad",
+    "cogmembench/agents/base.py": "a83271f9dfde57ec9707ad85c594b74f6a2f635b11a7410fe4bd4bd252437ff8",
+    "configs/models.yaml": "bcf70aeb8e4faab33816dcad2a2cd872029004009b9e9abcd8aba9e776137d6c",
+    "configs/scales.yaml": "cf8914b01a6bac801a6d16a2f6f074d691dfd41afd7a038c866633129369fdf5",
+    "configs/metrics.yaml": "452a393cc5f7bcff76acff2defc47893e46b373a7e10fd51d4345b11ada9f3a9",
+    "../mindgraph-mcp/src/tools.ts": "60c501c2df48fb2c398137045368d157a4500b2bc5f68af5eb763ecfb91ff63c",
+    "../mindgraph-mcp/src/index.ts": "402d5c7ecea6e2b66e3dd8d443a4a8dc41cc9219ad97787a832e41a78b681318",
+    "../mindgraph-mcp/package-lock.json": "a26ebc071b1f36a47423ec78348f0da1070a072541fe35e4be24eb4ccae20501"
+  }
+}
