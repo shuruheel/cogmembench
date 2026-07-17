@@ -141,7 +141,9 @@ def test_frozen_development_v2_protocol_verifies():
     assert verified["executor_version"] == "development-v2"
     assert verified["evaluator_version"] == "development-v2"
     assert verified["schedule_version"] == "balanced-v2"
-    assert verified["verified_files"] == 16
+    assert verified["locked_files"] == 16
+    assert verified["verified_local_files"] == 13
+    assert verified["verified_files"] + len(verified["unavailable_external_files"]) == 16
 
 
 def test_backend_lock_rejects_concurrent_owner(tmp_path):

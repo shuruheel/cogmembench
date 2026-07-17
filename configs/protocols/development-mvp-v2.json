@@ -19,7 +19,9 @@
     "cogmembench/agents/base.py": "a83271f9dfde57ec9707ad85c594b74f6a2f635b11a7410fe4bd4bd252437ff8",
     "configs/models.yaml": "bcf70aeb8e4faab33816dcad2a2cd872029004009b9e9abcd8aba9e776137d6c",
     "configs/scales.yaml": "cf8914b01a6bac801a6d16a2f6f074d691dfd41afd7a038c866633129369fdf5",
-    "configs/metrics.yaml": "452a393cc5f7bcff76acff2defc47893e46b373a7e10fd51d4345b11ada9f3a9",
+    "configs/metrics.yaml": "452a393cc5f7bcff76acff2defc47893e46b373a7e10fd51d4345b11ada9f3a9"
+  },
+  "external_files": {
     "../mindgraph-mcp/src/tools.ts": "60c501c2df48fb2c398137045368d157a4500b2bc5f68af5eb763ecfb91ff63c",
     "../mindgraph-mcp/src/index.ts": "402d5c7ecea6e2b66e3dd8d443a4a8dc41cc9219ad97787a832e41a78b681318",
     "../mindgraph-mcp/package-lock.json": "a26ebc071b1f36a47423ec78348f0da1070a072541fe35e4be24eb4ccae20501"
