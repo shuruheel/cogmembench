@@ -1,309 +1,223 @@
 # CogMemBench
 
-CogMemBench is a treatment-controlled benchmark for persistent cognitive memory in agents.
-It compares stateless, transcript replay, flat BM25, MindGraph passive, and MindGraph active
-prefetch conditions on multi-session preference, belief-revision, project-continuation and
-failure-learning tasks. Optional `flat-hybrid` and `mindgraph-active-pull` ablations isolate
-embedding quality and model-initiated retrieval policy.
+**Treatment-controlled evaluation of persistent memory as a cognitive substrate for AI agents**
 
-The benchmark distinguishes `reference` smoke runs from actual `mindgraph-local` and
-`mindgraph-cloud` evidence. Reference results validate the harness only.
+[![CI](https://github.com/shuruheel/cogmembench/actions/workflows/ci.yml/badge.svg)](https://github.com/shuruheel/cogmembench/actions/workflows/ci.yml)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
+[![Code: Apache-2.0](https://img.shields.io/badge/code-Apache--2.0-green.svg)](LICENSE)
+[![Data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-green.svg)](DATA_LICENSE.md)
 
-The credential-free Cognitive Substrate 2.0 implementation is complete. The three core families
-run through five
-capture/retrieval treatments—stateless, budget-matched transcript, automatic capture/passive
-retrieval, agent-directed capture/active retrieval, and oracle capture/passive retrieval—plus a
-separate full-transcript ceiling. Runs emit separate outcome-track evaluations, explicit
-capability coverage, and a steering report. The existing four-family benchmark remains available
-as the schema-v1 compatibility suite.
+CogMemBench evaluates whether persistent memory helps an agent **preserve, reuse, revise,
+reconstruct, and audit cognitive state over time**—not merely recall past text. It uses controlled
+causal worlds to measure recursive reasoning, bitemporal belief revision, dependency repair,
+decision provenance, and downstream action under matched memory treatments.
 
-MindGraph's authors maintain this benchmark and use it to steer MindGraph development. That
-conflict is addressed through fresh structural holdouts, complete open artifacts, explicit
-native/mapped evidence labels, independent annotation and review gates, and a failure-map launch
-posture—not by treating the benchmark as an independent product endorsement. See the
-[completion ledger](docs/COGNITIVE_SUBSTRATE_COMPLETION_LEDGER.md) for the exact boundary between
-implemented machinery and unexecuted scientific gates.
+The benchmark is representation-neutral. A tested system may use documents, vectors, relational
+tables, graphs, event logs, neural state, or a hybrid. CogMemBench scores what the agent can do with
+the substrate and, where instrumentation is available, how faithfully the substrate preserved and
+exposed the relevant cognition.
 
-## Install and reproduce
+> **Current status:** the credential-free Cognitive Substrate 2.0 implementation is complete.
+> Deterministic and reference runs validate benchmark machinery; they are not evidence that a
+> model or memory system is effective. Live external-system runs, representative multi-model
+> calibration, independent annotation, vendor review, and publication execution remain explicit
+> scientific gates. See the [implementation status](docs/COGNITIVE_SUBSTRATE_IMPLEMENTATION_STATUS.md).
+
+## Why this benchmark exists
+
+Most memory benchmarks ask whether an agent can retrieve something said earlier. CogMemBench asks
+what happens after memory becomes part of a reasoning lifecycle:
+
+```text
+evidence -> belief -> decision -> action -> outcome -> lesson
+              ^                                  |
+              +--------- revision and reuse -----+
+```
+
+A useful cognitive substrate should preserve the relationships in that lifecycle, make earlier
+conclusions available under a bounded context budget, repair downstream cognition when a premise
+changes, and reconstruct what evidence was actually available when a decision was made.
+
+This makes CogMemBench a **diagnostic causal protocol**, not a broad conversational QA dataset and
+not a single-score leaderboard. Its central output is a failure-mode profile: where capture,
+organization, retrieval, interpretation, reasoning, or action breaks.
+
+## What is evaluated
+
+The first-release core contains three procedurally generated task families:
+
+| Task family | Capability under test | Representative measurement |
+| --- | --- | --- |
+| Recursive investigation | Reuse a conclusion derived across earlier episodes, then repair and reuse it after a required premise changes | Trace-verified accuracy and revision curves by derivation depth |
+| Bitemporal belief revision | Distinguish when something was true from when it became known | Accuracy of `belief(valid_time=V, known_at=K)` and selective dependency repair |
+| Decision lineage | Act under incomplete information and later reconstruct the contemporaneous basis for the decision | Decision-time context recovery, rationality, execution, and post-hoc leakage |
+
+Recursive-investigation and decision-lineage worlds run in a deterministic service-incident
+simulator, so decisions have costs and observable consequences. The hidden event, derivation,
+temporal, and decision ledgers are fixed before their public natural-language realization is
+rendered.
+
+Measurements are reported by category rather than collapsed into one headline number:
+
+- task execution and decision quality;
+- recursive reuse, repair, contamination, and recomputation;
+- valid-time and known-at-time reconstruction;
+- dependency invalidation and unaffected-history preservation;
+- evidence, decision, action, and outcome lineage;
+- capture and retrieval policy quality;
+- calibration, abstention, tokens, latency, storage, and cost.
+
+## Experimental structure
+
+Every compatible substrate is exercised through the same treatment contract. Public events,
+reasoning scaffold, model, step budget, and read-context budget remain matched within a
+comparison.
+
+| Treatment | What it isolates |
+| --- | --- |
+| `stateless` | No cross-episode state |
+| `transcript` | Transcript replay under the same read-token ceiling as retrieval treatments |
+| `transcript-full` | Full-history truth-access ceiling |
+| `automatic-passive` | The deployed system's end-to-end capture and retrieval behavior |
+| `agent-directed-active` | A fixed agent using standardized write, relation, revision, and retrieval operations |
+| `oracle-passive` | Correct canonical artifacts written at annotated transition points, isolating retrieval and use from capture |
+
+Results are separated into two tracks:
+
+- **Outcome track:** black-box task, temporal, revision, audit, and efficiency outcomes. Every
+  system can participate without exposing an internal ontology.
+- **Instrumented substrate track:** artifact, relation, temporal, retrieval, and audit-receipt
+  diagnostics for systems that can export them. Unsupported capabilities are reported as absent,
+  never silently scored as zero.
+
+Capture-mode deltas localize failure along this pipeline:
+
+```text
+capture -> organization -> retrieval -> interpretation -> reasoning -> action
+```
+
+## Design controls that matter
+
+- **Re-derivation control.** At reuse checkpoints, raw premises exceed the read budget and are
+  dispersed across episodes. Success counts as reuse-dependent only when the stored derived
+  artifact appears in the decision-time trace.
+- **Two independent clocks.** Events distinguish valid time from transaction time. Adapters
+  declare native, mapped, or absent clock support, and incompatible clock granularities are not
+  pooled.
+- **Faithful audit, not plausible narrative.** Audit receipts are checked against context the
+  harness logged at decision time. Later evidence presented as an earlier rationale is leakage.
+- **World-level statistics.** The scenario is the statistical unit; its checkpoints are repeated
+  observations, not independent samples.
+- **Fresh-world publication rule.** Publication worlds must be generated after iteration and
+  differ in causal structure, realization, and lexicalization—not just random seed.
+- **No private chain of thought.** The benchmark records public events, explicit cognitive
+  artifacts, retrievals, tool calls, actions, and outcomes only.
+
+## Five-minute local run
+
+The local reference path is credential-free and requires Python 3.10 or newer:
 
 ```bash
+git clone https://github.com/shuruheel/cogmembench.git
 cd cogmembench
 python -m venv .venv
 . .venv/bin/activate
 pip install -e ".[dev]"
 
-cogmembench inspect
-cogmembench generate --scale smoke --seed 42
-cogmembench run --scale smoke --model deterministic-v1 \
-  --conditions stateless,transcript,flat,mindgraph-passive,mindgraph-active-prefetch
-cogmembench evaluate --run-id latest
-cogmembench report --run-id latest
-cogmembench export-trajectories --run-id latest
-```
+cogmembench generate --scale smoke --seed 42 \
+  --generator-version cognitive-v2 \
+  --output scenarios/fixtures/cognitive-v2-smoke-42.jsonl
 
-Development harness run:
-
-```bash
-cogmembench generate --scale development --seed 42
-cogmembench run --scale development --model deterministic-v1 --resume
-cogmembench report --run-id latest
-```
-
-Cognitive-v2 generator and mechanical oracle-ceiling validation:
-
-```bash
-cogmembench generate --scale development --seed 42 \
-  --generator-version cognitive-v2 --output scenarios/fixtures/cognitive-v2-42.jsonl
 cogmembench validate-cognitive-v2 \
-  --scenarios scenarios/fixtures/cognitive-v2-42.jsonl \
-  --output results/aggregated/cognitive-v2-42-validation.json
-cogmembench validate-generators-v2 \
-  --scenarios scenarios/fixtures/cognitive-v2-42.jsonl \
-  --output results/aggregated/cognitive-v2-42-generator-validity.json
-cogmembench validate-evaluators-v2 \
-  --output results/aggregated/cognitive-v2-evaluator-adversarial.json
-cogmembench validate-counterfactuals-v2 \
-  --scenarios scenarios/fixtures/cognitive-v2-42.jsonl \
-  --output results/aggregated/cognitive-v2-42-counterfactuals.json
-cogmembench validate-adapter-v2 --adapter reference
-cogmembench validate-adapter-v2 --adapter flat
-cogmembench validate-adapter-v2 --adapter summary --portability-audit
-cogmembench validate-adapter-v2 --adapter vector --portability-audit
-cogmembench validate-adapter-v2 --adapter hybrid --portability-audit
-```
-
-Cognitive-v2 treatment run and longitudinal steering comparison:
-
-```bash
-cogmembench run-cognitive-v2 \
-  --scenarios scenarios/fixtures/cognitive-v2-42.jsonl \
-  --model deterministic-v1 \
-  --conditions stateless,transcript,transcript-full,automatic-passive,agent-directed-active,oracle-passive \
-  --adapter reference \
-  --run-id cognitive-v2-reference-$(date +%Y%m%d)
-
-cogmembench report-cognitive-v2 \
-  --run-id cognitive-v2-reference-$(date +%Y%m%d) \
-  --previous-run-id cognitive-v2-reference-previous
-```
-
-`run-cognitive-v2` uses balanced condition order, a fresh substrate namespace per trial, logical
-scenario time, bounded retrieval, observable tool traces, and separate raw/evaluated artifacts.
-`transcript` uses the same read-token ceiling as retrieval treatments; `transcript-full` replays
-the complete preceding stream. `--retrieval-k` and `--retrieval-tokens` are frozen in the run
-manifest.
-The deterministic provider is a CI harness probe, not evidence of model or substrate quality.
-Real models use the same provider environment variables documented below.
-The default reasoning scaffold is `canonical-v1`; the preregistered sensitivity subsample repeats
-selected cells with `--scaffold minimal-v1`. Both prompt text and its SHA-256 are recorded in the
-run manifest.
-
-`validate-generators-v2` hashes lifecycle/ledger/DAG shapes independently from domain wording,
-enforces causal-world uniqueness and template-concentration thresholds, and scans public events
-for evaluator IDs or direct checkpoint answers. `validate-evaluators-v2` runs matched positive and
-negative cases for bounded hedging, paraphrase, granularity equivalence, stale beliefs,
-unsupported reuse, equivalent valid remediation wording, and post-hoc evidence. These are
-mechanical controls; Gate 3 still requires independent human agreement.
-
-Cognitive-v2 profiles are `smoke` (1 variant/family), `development` (5), `lite` (20),
-`calibration` (40), and `publication` (150). Each seed/variant pair changes causal parameters,
-not only scenario labels. Easy/medium/hard tiers control temporal distractors, derivation depth,
-decision context, and incident topology. For example, a 120-scenario calibration suite is:
-
-```bash
-cogmembench generate --scale calibration --seed 42 \
-  --generator-version cognitive-v2 --output scenarios/fixtures/cognitive-v2-calibration-42.jsonl
-```
-
-`validate-counterfactuals-v2` checks incident snapshots by forking correct-remediation,
-wrong-remediation, and wrong-target branches, requiring divergent outcomes and verifying replay,
-snapshot restoration, and branch isolation.
-Runner manifests report stratum counts, evaluated rows retain safe difficulty controls, and
-steering JSON includes per-family task success by difficulty tier and treatment condition.
-
-Single-feature ablation runs use the same public scenario file and runner contract:
-
-```bash
-cogmembench run-cognitive-v2 \
-  --scenarios scenarios/fixtures/cognitive-v2-calibration-42.jsonl \
-  --conditions stateless,automatic-passive \
-  --adapter reference --run-id cognitive-v2-full
+  --scenarios scenarios/fixtures/cognitive-v2-smoke-42.jsonl
 
 cogmembench run-cognitive-v2 \
-  --scenarios scenarios/fixtures/cognitive-v2-calibration-42.jsonl \
-  --conditions stateless,automatic-passive \
-  --adapter reference --ablation no-temporal-metadata \
-  --run-id cognitive-v2-no-temporal
+  --scenarios scenarios/fixtures/cognitive-v2-smoke-42.jsonl \
+  --model deterministic-v1 --adapter reference --run-id local-smoke
 
-cogmembench analyze-cognitive-v2 \
-  --evaluated results/evaluated/cognitive-v2-full.jsonl,results/evaluated/cognitive-v2-no-temporal.jsonl \
-  --output results/aggregated/cognitive-v2-ablation-analysis.json
-
-cogmembench failures-cognitive-v2 \
-  --evaluated results/evaluated/cognitive-v2-full.jsonl
-cogmembench cost-cognitive-v2 \
-  --evaluated results/evaluated/cognitive-v2-full.jsonl --profile iteration
-cogmembench power-cognitive-v2 \
-  --evaluated results/evaluated/cognitive-v2-full.jsonl \
-  --treatment automatic-passive --baseline transcript \
-  --minimum-effect 0.10 --assumed-sd 0.30
+cogmembench report-cognitive-v2 --run-id local-smoke
 ```
 
-The other supported removals are `no-provenance-links`,
-`no-evidence-claim-distinction`, `no-stored-intermediate-conclusions`,
-`no-dependency-tracking`, `no-supersession`, `no-active-retrieval`,
-`no-lesson-consolidation`, and `no-audit-receipt`. Analysis treats scenarios as the primary unit,
-pairs rows by scenario/model/repetition, rejects mismatched public hashes, and performs a nested
-template/world/observation bootstrap. The mixed-effects model remains a frozen-pilot target rather
-than a dependency of the lightweight CLI.
+The deterministic provider tests scheduling, isolation, tracing, gold consistency, evaluation,
+and reporting. It must not be cited as a model or substrate result. The generated steering report
+is written to `results/aggregated/local-smoke-steering.md`.
 
-Recursive scenarios contain four evaluated checkpoints: initial derivation, budget-controlled
-reuse, conclusion repair after a required premise is invalidated, and budget-controlled reuse of
-the revised conclusion. Reports separate raw answer accuracy from trace-verified initial and
-repaired reuse, stale-conclusion intrusion, failure-amplification avoidance, and execution against
-the corrected incident world. `analyze-cognitive-v2` emits both accuracy-by-depth and
-revision-by-depth curves.
-The same analysis also reports confidence calibration and expected calibration error when
-evaluated rows contain confidence observations.
+For validation suites, ablations, local baselines, real models, external adapters, release
+preparation, and MindGraph server setup, see the [running guide](docs/RUNNING.md) and
+[reproducibility package](docs/REPRODUCIBILITY_V2.md).
 
-Local cognitive-v2 baseline adapters are `flat` (Okapi BM25), `summary` (rolling extractive
-summary), `vector`, and `hybrid` (BM25/vector reciprocal-rank fusion at `k=60`). BM25, vector, and
-hybrid index the same canonical rendering; summary compresses the same temporally visible artifact
-fields. A matched smoke matrix can run the same `automatic-passive` condition once per adapter:
+## Supported adapters
 
-```bash
-for adapter in flat summary vector hybrid; do
-  cogmembench run-cognitive-v2 \
-    --scenarios scenarios/fixtures/cognitive-v2-42.jsonl \
-    --conditions automatic-passive \
-    --adapter "$adapter" \
-    --run-id "cognitive-v2-${adapter}-$(date +%Y%m%d)"
-done
-```
+The adapter contract covers logical time, quiescence, namespace isolation, dual-axis snapshots,
+bounded retrieval, audit export, capability reporting, and explicit usage fidelity.
 
-With `deterministic-v1`, vector and hybrid use credential-free feature hashing solely to test the
-harness. Real-model runs require `COGMEMBENCH_EMBEDDING_API_KEY` (or `OPENAI_API_KEY`), with
-optional `COGMEMBENCH_EMBEDDING_BASE_URL` and `COGMEMBENCH_EMBEDDING_MODEL`. Embedding calls,
-input usage, model identity, fusion legs, and scores are retained in usage reports and traces.
+| Adapter | Role | Evidence mode |
+| --- | --- | --- |
+| `reference` | Deterministic ledger-conformant harness reference | Native |
+| `flat` | Okapi BM25 baseline | Local canonical rendering |
+| `summary` | Rolling extractive-summary baseline | Local canonical rendering |
+| `vector` | Dense-retrieval baseline | Local canonical rendering |
+| `hybrid` | BM25/vector reciprocal-rank fusion baseline | Local canonical rendering |
+| `mindgraph-v2` | MindGraph public HTTP adapter | Mapped |
+| `mem0-oss` | Self-hosted Mem0 REST adapter | Mapped |
+| `zep-cloud` | Zep Cloud Graph API adapter | Mapped |
+| `cognee` | Cognee REST API adapter | Mapped |
 
-External adapter walking skeletons use an append-only canonical journal persisted inside the
-tested service. This is reported as `evidence_mode=mapped`; no harness-only mirror is scored.
-Run the portability audit directly when diagnosing an adapter:
+“Mapped” means the adapter persists a reversible canonical operation journal inside the tested
+service and reconstructs scored state from records read back from that service. A harness-only
+sidecar is inadmissible for substrate credit. Adapter presence is not evidence that its live
+scientific validation gate has passed; the status document records that boundary.
 
-```bash
-# MindGraph public HTTP API
-MINDGRAPH_BASE_URL=http://127.0.0.1:18790 \
-  cogmembench validate-adapter-v2 --adapter mindgraph-v2 --portability-audit
+See the [external adapter kit](docs/EXTERNAL_ADAPTER_KIT.md) to add or audit a substrate.
 
-# Self-hosted Mem0 OSS REST server
-MEM0_BASE_URL=http://127.0.0.1:8000 MEM0_API_KEY=... \
-  cogmembench validate-adapter-v2 --adapter mem0-oss --portability-audit
+## Repository map
 
-# Zep Cloud Graph API
-ZEP_API_KEY=... \
-  cogmembench validate-adapter-v2 --adapter zep-cloud --portability-audit
+| Path | Purpose |
+| --- | --- |
+| `cogmembench/scenarios/` | Public/hidden schemas, causal-world generators, and release controls |
+| `cogmembench/substrate/` | Representation-neutral contracts, treatments, and adapters |
+| `cogmembench/environments/` | Deterministic executable environments |
+| `cogmembench/evaluators/` | Outcome and instrumented-track scoring |
+| `cogmembench/runners/` | Balanced execution, manifests, traces, and protocol locks |
+| `cogmembench/analysis/` | Hierarchical, ablation, calibration, cost, power, and failure analysis |
+| `configs/` | Profiles, model settings, completion evidence, and freeze specifications |
+| `docs/` | Protocol, methodology, governance, limitations, and implementation evidence |
+| `tests/` | Contract, generator, evaluator, runner, release, and analysis tests |
 
-# Cognee REST API v1
-COGNEE_BASE_URL=http://127.0.0.1:8000 COGNEE_API_KEY=... \
-  cogmembench validate-adapter-v2 --adapter cognee --portability-audit
-```
+Start with the [protocol specification](docs/COGNITIVE_V2_PROTOCOL.md), then read the
+[methodology](docs/METHODOLOGY.md) and [metrics](docs/METRICS.md). The original
+[cognitive-substrate upgrade plan](docs/COGNITIVE_SUBSTRATE_UPGRADE_PLAN.md) explains the design
+rationale and phased research program; the [completion ledger](docs/COGNITIVE_SUBSTRATE_COMPLETION_LEDGER.md)
+maps that plan to implementation evidence.
 
-The same adapter names are accepted by `run-cognitive-v2`. Every non-reference treatment run
-executes this portability audit as a mandatory preflight and stops before trials if it fails.
-MindGraph reset
-deletes only nodes owned by the trial's derived agent namespace; Mem0 deletes only the trial user
-scope; Zep uses a dedicated graph per trial. External internal-model and embedding usage remains
-an explicit lower bound until a service exposes complete accounting.
+The earlier four-family cross-session benchmark remains available as the schema-v1 compatibility
+suite through `cogmembench generate`, `run`, `evaluate`, and `report`. It is maintained for
+regression and integration coverage, not as primary Cognitive Substrate 2.0 evidence.
 
-Use `--operating-mode matched-budget` for the fixed comparison budget. Use
-`--operating-mode natural` only with separately frozen, vendor-reviewed adapter settings supplied
-through `--retrieval-k` and `--retrieval-tokens`; the exact label and settings are retained in the
-manifest.
+## MindGraph relationship and governance
 
-Publication candidates are canaried and audited before an immutable freeze:
+CogMemBench is created and maintained by MindGraph's authors and is used as a longitudinal
+instrument for improving MindGraph. That is a real conflict of interest, not a claim of
+independence.
 
-```bash
-cogmembench prepare-cognitive-v2-release \
-  --scenarios scenarios/held_out/newly-generated.jsonl --split publication \
-  --reference development=scenarios/fixtures/cognitive-v2-calibration-42.jsonl \
-  --output scenarios/held_out/publication-v2.jsonl
+The benchmark addresses it structurally: all systems receive byte-identical public streams;
+MindGraph uses the same public adapter contract; outcome scoring does not require graphs or reward
+benchmark ontology vocabulary; publication claims require fresh structural holdouts, frozen
+protocol hashes, independent human annotation, external protocol review, and a vendor review
+window. Generator, harness, evaluators, adapters, and analyses are public. The intended launch
+narrative is a cross-system failure map—including MindGraph's failures—not a product victory
+claim.
 
-cogmembench freeze-cognitive-v2-protocol \
-  --spec configs/cognitive_v2_freeze.example.json \
-  --output configs/protocols/cognitive-v2-publication.json
-```
+No scientific gate passes merely because its code exists. The authoritative boundary is in the
+[implementation status](docs/COGNITIVE_SUBSTRATE_IMPLEMENTATION_STATUS.md), with known threats in
+[limitations](docs/LIMITATIONS.md) and fairness rules in [fairness](docs/FAIRNESS.md).
 
-The freeze verifies and hashes the adjacent release manifest and its passing structural
-separation audit. Do not create the real publication freeze until the pilot, human agreement,
-vendor review, and cost/power gates pass.
+## Contributing and licensing
 
-Real-model runs use OpenRouter's OpenAI-compatible API. The inexpensive pinned configuration
-is `qwen/qwen3-32b` on DeepInfra with provider fallbacks disabled:
+Issues, external adapters, adversarial scenarios, evaluator challenges, and independent
+replications are welcome. Changes that affect benchmark meaning should include tests and an entry
+in the append-only [iteration log](docs/ITERATION_LOG.md).
 
-```bash
-export OPENROUTER_API_KEY=sk-or-v1-...
-cogmembench run --scale smoke --model qwen/qwen3-32b --backend reference
-```
-
-The cost-balanced stronger configuration is `strong-model`, currently
-`openai/gpt-5.4-mini` pinned to OpenRouter's OpenAI provider with fallbacks disabled. The
-tested-agent model can change between matched runs; the server extraction model must remain
-fixed for the model/tool-policy ablation.
-
-Actual local MindGraph additionally requires a running server. The command below enables
-OpenAI embeddings while retaining OpenRouter for extraction. `OpenAIChatProvider` appends
-`/v1/chat/completions`, so its OpenRouter base is `/api` (the Python benchmark provider uses
-`/api/v1`). Automatic wiki compilation is disabled because it is outside the memory treatment,
-adds unmetered LLM calls, and can outlive graph reset.
-
-```bash
-# Terminal 1, from the workspace root
-cd mindgraph-rs
-CARGO_TARGET_DIR=../mnestic/target cargo build -p mindgraph-server
-set -a
-source ../cogmembench/.env
-set +a
-MINDGRAPH_DB_PATH=:memory: \
-MINDGRAPH_LLM_API_KEY="$OPENROUTER_API_KEY" \
-MINDGRAPH_LLM_BASE_URL=https://openrouter.ai/api \
-MINDGRAPH_LLM_MODEL=qwen/qwen3-32b \
-MINDGRAPH_LLM_PROVIDER_ONLY=deepinfra \
-MINDGRAPH_LLM_REASONING=off \
-MINDGRAPH_LLM_MAX_OUTPUT_TOKENS=8192 \
-MINDGRAPH_EMBEDDING_MODEL=text-embedding-3-small \
-MINDGRAPH_WIKI_MAX_TOKENS=8192 \
-MINDGRAPH_WIKI_AUTOCOMPILE=off \
-MINDGRAPH_MAX_INGESTION_CHUNKS=1 \
-../mnestic/target/debug/mindgraph-server
-
-# Terminal 2
-cd cogmembench
-MINDGRAPH_BASE_URL=http://127.0.0.1:18790 \
-cogmembench run --scale smoke --seed 42 --model qwen/qwen3-32b \
-  --backend mindgraph-local \
-  --conditions stateless,transcript,flat,flat-hybrid,mindgraph-passive,mindgraph-active-prefetch,mindgraph-active-pull \
-  --run-id smoke-openrouter-local-$(date +%Y%m%d)
-```
-
-The runner defaults to a 180-second provider read timeout and a 300-second MindGraph job
-timeout. Override them with `COGMEMBENCH_PROVIDER_TIMEOUT_SECONDS` and
-`COGMEMBENCH_MINDGRAPH_TIMEOUT_SECONDS`. With `OPENAI_API_KEY`, the runner refuses a local
-MindGraph run unless its startup diagnostic observes both `fts` and `vec` contributions and
-verifies that reset removes vector and full-text state. `flat-hybrid` uses the same
-`MINDGRAPH_EMBEDDING_MODEL` through OpenAI and reports embedding calls, tokens, latency, and
-estimated cost separately.
-
-Never compare or pool reference and actual-MindGraph runs. See `docs/METHODOLOGY.md`, the
-[implementation status](docs/COGNITIVE_SUBSTRATE_IMPLEMENTATION_STATUS.md), and the
-[completion ledger](docs/COGNITIVE_SUBSTRATE_COMPLETION_LEDGER.md).
-
-## Artifacts
-
-Runs write checkpointed JSONL to `results/raw`, traces to `results/traces`, aggregate JSON to
-`results/aggregated`, trajectories to `results/trajectories`, and the current generated report to
-`docs/RESULTS.md`. Each run includes prompt/config hashes and repository SHAs.
-
-## Licensing
-
-Benchmark software, generators, evaluators, configurations, and analysis code are Apache-2.0.
-Generated scenarios and dataset artifacts are CC BY 4.0; see [DATA_LICENSE.md](DATA_LICENSE.md).
+Benchmark software, generators, evaluators, configurations, and analysis code are licensed under
+Apache-2.0. Generated scenarios and dataset artifacts are licensed under CC BY 4.0; see
+[DATA_LICENSE.md](DATA_LICENSE.md).
