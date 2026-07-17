@@ -76,6 +76,11 @@ def _latest(run_id: str) -> str:
     return run_id
 
 
+def _protocol_metadata(manifest: dict) -> dict:
+    value = manifest.get("protocol_lock")
+    return value if isinstance(value, dict) else {}
+
+
 def _scenario_path(scale: str, seed: int) -> Path:
     folder = "held_out" if scale == "publication" else "fixtures"
     return ROOT / "scenarios" / folder / f"{scale}-{seed}.jsonl"
@@ -248,7 +253,7 @@ def cmd_evaluate(args: argparse.Namespace) -> int:
         segments = trace_segments.get((row["scenario_id"], row["condition"]), [[]])
         evaluator = (
             evaluate_trial_v2
-            if manifest.get("protocol_lock", {}).get("evaluator_version") == "development-v2"
+            if _protocol_metadata(manifest).get("evaluator_version") == "development-v2"
             else evaluate_trial
         )
         row["evaluation"] = evaluator(
@@ -288,7 +293,7 @@ def cmd_report(args: argparse.Namespace) -> int:
     report_path = ROOT / "docs" / "RESULTS.md"
     report_path.write_text(
         render_development_v2_report(aggregate, manifest)
-        if manifest.get("protocol_lock", {}).get("evaluator_version") == "development-v2"
+        if _protocol_metadata(manifest).get("evaluator_version") == "development-v2"
         else render_report(aggregate, manifest)
     )
     plot = write_task_success_svg(
